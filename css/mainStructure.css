@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between image and links */
+    padding: 1.5rem;
+    background-color: #913a3a;
+}
+
+.header img {
+    max-width: 20rem;
+    height: auto;
+    width: 200%;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ffca00; /* Link color */
+    font-size: 1.75rem;
+    padding: 0.5rem 2.15rem; /* Add padding to links */
+    transition: color 0.75s ease;
+}
+
+.links a:hover {
+    color: #ff8800; /* Darker blue on hover */
+}
