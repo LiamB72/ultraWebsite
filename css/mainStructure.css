@@ -4,29 +4,36 @@ body {
     background-color: #ffffff;
 }
 
-.header {
+#header {
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: space-between; /* Space between image and links */
-    padding: 1.5rem;
     background-color: #913a3a;
+    height: fit-content;
 }
 
-.header img {
-    max-width: 20rem;
-    height: auto;
-    width: 200%;
-}
-
-.links {
+#img-header {
     display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    flex: 1;
 }
 
-.links a {
+#img-header a img {
+    width: 65%;
+    max-width: 30rem;
+}
+
+#links-header {
+    display: flex;
+    align-items: center;
+}
+
+#links-header a {
     text-decoration: none;
     color: #ffca00; /* Link color */
     font-size: 1.75rem;
-    padding: 0.5rem 2.15rem; /* Add padding to links */
+    padding: 0.5rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
 }
 
