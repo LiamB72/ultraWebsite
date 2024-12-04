@@ -39,7 +39,15 @@ body {
     transition: color 0.75s ease;
 }
 
+#links-header a#steamLink{
+    font-weight: bolder;
+    color: #ff6000;
+    text-decoration: underline;
+    font-size: 1.75rem;
+    padding: 0.5rem 2.5rem; /* Add padding to links */
+    transition: color 0.75s ease;
+}
+
 .links a:hover {
     color: #ff8800; /* Darker blue on hover */
 }
-
