@@ -4,6 +4,8 @@ body {
     background-color: #ffffff;
 }
 
+/* ================ HEADER =================== */
+
 #header {
     display: flex;
     background-color: #913a3a;
@@ -40,3 +42,4 @@ body {
 .links a:hover {
     color: #ff8800; /* Darker blue on hover */
 }
+
