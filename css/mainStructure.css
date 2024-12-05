@@ -27,15 +27,21 @@ body {
 }
 
 #links-header {
-    display: flex;
+    position: absolute; /*Position within the header*/
+    top: 1.5em;
+    right: 1em;
+    max-width: 75em;
+
+    display: flex; /* Disposition of the items themselves inside of the link header*/
     align-items: center;
+    flex: 5;
 }
 
 #links-header a {
     text-decoration: none;
     color: #ffca00; /* Link color */
     font-size: 1.75rem;
-    padding: 0.5rem 2.5rem; /* Add padding to links */
+    padding: 0.15rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
 }
 
@@ -44,7 +50,7 @@ body {
     color: #ff6000;
     text-decoration: underline;
     font-size: 1.75rem;
-    padding: 0.5rem 2.5rem; /* Add padding to links */
+    padding: 0.15rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
 }
 
