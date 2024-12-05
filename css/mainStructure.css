@@ -51,3 +51,19 @@ body {
 .links a:hover {
     color: #ff8800; /* Darker blue on hover */
 }
+
+.weapons div{
+    padding: 20px;
+    margin-bottom: 2em;
+}
+#piercer {
+    border: solid dodgerblue 2px;
+}
+
+#marksman {
+    border: solid lawngreen 2px;
+}
+
+#sharpshooter {
+    border: solid darkred 2px;
+}
