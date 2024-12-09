@@ -14,14 +14,6 @@ body {
 #header {
     display: flex;
     background-color: #913a3a;
-    height: fit-content;
-}
-
-.backgroundcolour {
-    background: rgba( 131, 216, 42, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6px );-webkit-backdrop-filter: 
-    blur( 6px );border-radius: 10px;
 }
 
 #img-header {
@@ -70,6 +62,8 @@ body {
     color: #ff8800; /* Darker blue on hover */
 }
 
+/* ================== Weapons ================== */
+
 .weapons div{
     padding: 10px;  /* this adds the background blur onto the text so its readable while still having the image in the background */
     background: rgba( 255, 255, 255, 0.25 );
@@ -78,102 +72,104 @@ body {
     -webkit-backdrop-filter: blur( 12px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 1px;
 }
 
-#blue {
+#blue-borders {
     border: solid dodgerblue 2px;
     margin-left: 3em;
     margin-right: 3em;
     margin-top: 3em;
 }
 
-#green {
+#green-borders {
     border: solid lawngreen 2px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 2em 3em;
 }
 
-#red {
+#red-borders {
     border: solid darkred 2px;
     margin-left: 3em;
     margin-right: 3em;
     margin-bottom: 3em;
 }
 
-.dropbtn {                          /* just what the buttom looks like */
+.primaryGun{
+    max-width: 150px;
+    max-height: 75px;
+    padding-left: 0;
+}
+
+.alternateGun{
+    max-width: 150px;
+    max-height: 75px;
+    scale: 75%;
+}
+
+/* ================== Dropdown ================== */
+.left {       /* does stuff to the left */
+    left: 0;
+}
+
+.split {        /*having a screen separation so i can have a menu specific zone of the left, not elegant but i tried things with div and it would cut of the menu boxes but could be a skill issue */
+    margin-top: 1px;
+    height: 100%;
+    width: fit-content;
+    max-width: 300px;
+    position: fixed;
+    top: 5rem;
+    padding-top: 2%;
+    padding-left: 2%;
+
+    background-image: linear-gradient(to right, rgba(189, 42, 42, 1), rgba(249, 0, 40, 0.25));
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 2% 2% 10%;
+}
+
+.dropdownButton { /* just what the buttom looks like */
     background-color: #fc4444;
+    min-width: 250px;
+    height: 50px;
     color: #ffca00;
     padding: 16px;
     font-size: 16px;
     border: none;
 }
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 
-.dropdown-content {                 /* content of the drop boxes (note the colours suck they are just templates) */
+.dropdown-links {   /* content of the drop boxes (note the colours suck they are just templates) */
     display: none;
     position: absolute;
     background-color: #ad3434;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    top:0;
+    width: 250px;
+    top: 0;
     left: 100%;
 }
   
-.dropdown-content a {
+.dropdown-links a {
     color: black;
-    padding: 12px 16px;
+    font-size: 16px;
+    padding: 16px;
     text-decoration: none;
-    display: block;
 }
   
-#prelude .dropdown-content a:hover {    /*colour of the sub menu boxes when hovered */
-    background-color: #ff5e00;
-}
-  
-.dropdown:hover .dropdown-content {     /* her to show the content of each menu when hovered, pretty sure the z index does nothing for now but it's there*/
-    display: block;
+.dropdown:hover .dropdown-links {     /* her to show the content of each menu when hovered, pretty sure the z index does nothing for now but it's there*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     z-index: 1;
 }
   
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropdownButton {
     background-color: #a82727;
 }
 
-.dropdown-content a:hover {
+.dropdown-links a:hover {
     background-color: #ff5e00;
-}
-
-.split {        /*having a sreen seperation so i can have a menu specific zone of the left, not elegant but i tried things with div and it would cut of the menu boxes but could be a skill issue */
-    height: 90%;
-    width: 15%;
-    position: fixed;
-    top: 5rem;
-    overflow-x: hidden;
-    padding-top: 2%;
-    padding-left: 2%;
-  }
-  
-.left {       /* does stuff to the left */
-    left: 0;
-    background-color: #bd2a2a;
-}
-
-.centered {     /* margin properties for the menu buttons so they aren't stuck to the sides */
-    padding-top: 2%;
-    margin: 2%;
-}
-
-.leftgun{
-    scale: 75%;
-    padding-left: 0;
-}
-
-.rightgun{
-    scale: 75%;
 }
