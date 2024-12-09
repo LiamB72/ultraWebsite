@@ -94,18 +94,20 @@ body {
     margin-bottom: 3em;
 }
 
+/*
 .primaryGun{
     max-width: 150px;
     max-height: 75px;
     padding-left: 0;
 }
 
+
 .alternateGun{
     max-width: 150px;
     max-height: 75px;
     scale: 75%;
 }
-
+*/
 /* ================== Dropdown ================== */
 .left {       /* does stuff to the left */
     left: 0;
