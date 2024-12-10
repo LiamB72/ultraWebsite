@@ -1,0 +1,13 @@
+10/12/2024:
+Changed the id of the different borders to classes.
+Added back the different ids to access the different gun descriptions.
+Modified the font of the descriptions of the guns to sans-serif.
+Modified the position the guns' images to the top right corner.
+Added borders to the guns' images.
+Removed the "Home" Button.
+Added the "Pop Culture" button and its page accordingly.
+Modified the content-links' height to fit their button's height.
+Modified the HTML of every gun type to accomodate for the images' positioning.
+Added alt text to every guns' images.
+Changed the size of the guns' images using CSS (not actually modified the images themselves).
+Added new items to the TO-DO list in "index.html" file.
