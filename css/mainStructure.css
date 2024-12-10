@@ -109,11 +109,11 @@ body {
     z-index: 0;
     padding: 10px;  /* this adds the background blur onto the text so its readable while still having the image in the background */
 
-    background: rgba(141, 141, 141, 0.425);
+    background: rgba(79, 79, 79, 0.75);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     
-    backdrop-filter: blur( 12px );
-    -webkit-backdrop-filter: blur( 12px );
+    backdrop-filter: blur( 24px );
+    -webkit-backdrop-filter: blur( 24px );
     
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 15px;
@@ -206,7 +206,7 @@ body {
 }
   
 .dropdown-links a {
-    color: black;
+    color: white;
     flex: 1;
     font-size: 16px;
     padding: 16px;
@@ -223,8 +223,10 @@ body {
   
 .dropdown:hover .dropdownButton {
     background-color: #a82727;
+    color: black;
 }
 
 .dropdown-links a:hover {
     background-color: #ff5e00;
+    color: black;
 }
