@@ -15,6 +15,7 @@ body {
     display: flex;
     background-color: #913a3a;
     align-items: center;
+    justify-content: space-between;
 }
 
 #img-header {
@@ -50,10 +51,31 @@ body {
     font-weight: bolder;
     color: #ff6000;
     text-decoration: underline;
-    font-size: 1.75rem;
     padding: 0.15rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
 }
+
+@media screen and (max-width: 1600px) {
+    #img-header {
+        max-width: 20%;
+    }
+    #links-header a {
+        font-size: 1.65rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #links-header a {
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width: 1336px) {
+    #links-header a {
+        font-size: 1.15rem;
+    }
+}
+
 
 .links a:hover {
     color: #ff8800; /* Darker blue on hover */
@@ -145,12 +167,10 @@ body {
 }
 
 .split {        /* left side panel */
-    margin-top: 1px;
     height: 100%;
     width: fit-content;
     max-width: 300px;
     position: fixed;
-    top: 5rem;
     padding-top: 2%;
     padding-left: 2%;
 
@@ -168,7 +188,7 @@ body {
 .dropdownButton { /* just what the buttom looks like */
     background-color: #fc4444;
     min-width: 250px;
-    height: 50px;
+    height: 51.2px;
     color: #ffca00;
     padding: 16px;
     font-size: 16px;
@@ -187,9 +207,10 @@ body {
   
 .dropdown-links a {
     color: black;
+    flex: 1;
     font-size: 16px;
     padding: 16px;
-    height: 18px;
+    height: 33px;
     text-decoration: none;
 }
   
