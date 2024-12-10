@@ -70,7 +70,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1336px) {
+@media screen and (max-width: 1366px) {
     #links-header a {
         font-size: 1.15rem;
     }
