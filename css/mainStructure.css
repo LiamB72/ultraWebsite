@@ -15,13 +15,13 @@ body {
     margin: 0;
     font-family: "VCR OSD Mono", monospace; /* Apply custom font */
     background-color: #ffffff;
-    background-image: url('../images/indexbackground.jpg');
+    background-image: url('../images/indexbackground.jpg'); /*different background image using an ID cause i don't plan on using it anywhere else*/
     background-size: cover;
     background-position: center top; 
     background-attachment: fixed;
 }
 
-#introduction {     
+#introduction {         /*format for the title of the different sections*/
     font-size: 2.2em;
     color: #f40a2b;
 }
@@ -30,6 +30,7 @@ body {
     margin-top: 5em;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 3rem;
     position: relative;
     z-index: 0;
     background: rgba(65, 78, 74, 0.75);
@@ -58,6 +59,16 @@ body {
     z-index: 1;
     max-width: 60%;
     border-radius: 5em
+}
+/* ================ Just for pop cutlture page background cause ballin ============== */
+#popcult {
+    margin: 0;
+    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
+    background-color: #ffffff;
+    background-image: url('../images/ballin.jpg '); /*different background image using an ID cause i don't plan on using it anywhere else*/
+    background-size: cover;
+    background-position: center top; 
+    background-attachment: fixed;
 }
 
 /* ================ HEADER =================== */
@@ -123,7 +134,7 @@ body {
 
 @media screen and (max-width: 1366px) {
     #links-header a {
-        font-size: 1.15rem;
+        font-size: 1.3rem;
     }
 }
 
