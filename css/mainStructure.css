@@ -9,6 +9,52 @@ body {
 
 }
 
+/* ============= spedifically all index content here ============ */
+
+#indexpage {
+    margin: 0;
+    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
+    background-color: #ffffff;
+    background-image: url('../images/indexbackground.jpg');
+    background-size: cover;
+    background-position: center top; 
+    background-attachment: fixed;
+}
+
+.indexpresentation{
+    margin-top: 5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
+    z-index: 0;
+    background: rgba(65, 78, 74, 0.75);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    
+    backdrop-filter: blur( 24px );
+    -webkit-backdrop-filter: blur( 24px );
+    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 15px;
+
+    border: solid rgb(0, 0, 0) 4px;
+}
+
+.indexpresentation p{
+    padding-left: 20px;
+    font-size: 1.4em;
+    color: aliceblue;
+
+}
+
+#hakitaimage {
+    margin-left:20%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    z-index: 1;
+    max-width: 60%;
+    border-radius: 5em
+}
+
 /* ================ HEADER =================== */
 
 #header {

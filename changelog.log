@@ -11,3 +11,8 @@ Modified the HTML of every gun type to accomodate for the images' positioning.
 Added alt text to every guns' images.
 Changed the size of the guns' images using CSS (not actually modified the images themselves).
 Added new items to the TO-DO list in "index.html" file.
+
+11/12/2024:
+added the favicon
+started work on the index page with text and images
+changed the index background image to have it diferenciate itself from the other pages
