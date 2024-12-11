@@ -21,6 +21,11 @@ body {
     background-attachment: fixed;
 }
 
+#introduction {     
+    font-size: 2.2em;
+    color: #f40a2b;
+}
+
 .indexpresentation{
     margin-top: 5em;
     margin-left: 20%;
@@ -88,7 +93,7 @@ body {
 #links-header a {
     text-decoration: none;
     color: #ffca00; /* Link color */
-    font-size: 1.75rem;
+    font-size: 2rem;
     padding: 0.15rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
 }
