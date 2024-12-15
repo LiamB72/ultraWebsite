@@ -1,3 +1,9 @@
+:root {
+    --titles-color: #f40a2b;
+    --link-color: #ffca00;
+    --link-hovered-color: #ff6a00;
+}
+
 body {
     margin: 0;
     font-family: "VCR OSD Mono", monospace; /* Apply custom font */
@@ -9,28 +15,15 @@ body {
 
 }
 
-/* ============= spedifically all index content here ============ */
+/* ============= specifically all index content here ============ */
 
-#indexpage {
-    margin: 0;
-    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
-    background-color: #ffffff;
+#bgIndex {
     background-image: url('../images/indexbackground.jpg'); /*different background image using an ID cause i don't plan on using it anywhere else*/
-    background-size: cover;
-    background-position: center top; 
-    background-attachment: fixed;
 }
 
-#introduction {         /*format for the title of the different sections*/
-    font-size: 2.2em;
-    color: #f40a2b;
-}
-
-.indexpresentation{
-    margin-top: 5em;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 3rem;
+.contentContainer{
+    margin: 5em 10% 3rem;
+    width: 80%;
     position: relative;
     z-index: 0;
     background: rgba(65, 78, 74, 0.75);
@@ -39,36 +32,64 @@ body {
     backdrop-filter: blur( 24px );
     -webkit-backdrop-filter: blur( 24px );
     
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 15px;
-
+    /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
     border: solid rgb(0, 0, 0) 4px;
+    border-radius: 15px;
 }
 
-.indexpresentation p{
-    padding-left: 20px;
+.contentContainer p{
+    padding: 0px 50px; /*normally it would be [top right bottom left] but here it is [top-bottom left-right]*/
+    font-family: sans-serif;
+    text-align: justify;
     font-size: 1.4em;
     color: aliceblue;
-
 }
 
-#hakitaimage {
+.contentContainer p.title {         /*format for the title of the different sections*/
+    text-align: center;
+    padding: 0;
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: var(--titles-color);
+}
+
+.ultrakill{
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hakitaIntro {
+    text-align: center;
+    padding: 0;
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: var(--titles-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.75s ease;
+}
+
+.link:hover {
+    color: var(--link-hovered-color)!important;
+}
+
+#hakitaImage {
     margin-left:20%;
-    padding-top: 2em;
     padding-bottom: 2em;
     z-index: 1;
     max-width: 60%;
     border-radius: 5em
 }
-/* ================ Just for pop cutlture page background cause ballin ============== */
-#popcult {
-    margin: 0;
-    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
-    background-color: #ffffff;
+
+/* ================ Just for pop culture page background cause ballin' ============== */
+#popCultureBG {
     background-image: url('../images/ballin.jpg '); /*different background image using an ID cause i don't plan on using it anywhere else*/
-    background-size: cover;
-    background-position: center top; 
-    background-attachment: fixed;
 }
 
 /* ================ HEADER =================== */
@@ -103,7 +124,8 @@ body {
 
 #links-header a {
     text-decoration: none;
-    color: #ffca00; /* Link color */
+    text-transform: uppercase;
+    color: var(--link-color);
     font-size: 2rem;
     padding: 0.15rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
@@ -111,7 +133,7 @@ body {
 
 #links-header a#steamLink{
     font-weight: bolder;
-    color: #ff6000;
+    color: var(--link-hovered-color);
     text-decoration: underline;
     padding: 0.15rem 2.5rem; /* Add padding to links */
     transition: color 0.75s ease;
@@ -138,9 +160,9 @@ body {
     }
 }
 
-
-.links a:hover {
-    color: #ff8800; /* Darker blue on hover */
+#links-header a:hover {
+    color: var(--link-hovered-color);
+    transition: color 0.75s ease;
 }
 
 /* ================== Weapons ================== */
@@ -255,6 +277,7 @@ body {
     padding: 16px;
     font-size: 16px;
     border: none;
+    transition: background-color, color 0.75s ease;
 }
 
 .dropdown-links {   /* content of the drop boxes (note the colours suck they are just templates) */
@@ -286,6 +309,7 @@ body {
 .dropdown:hover .dropdownButton {
     background-color: #a82727;
     color: black;
+    transition: background-color 0.75s ease;
 }
 
 .dropdown-links a:hover {

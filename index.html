@@ -8,7 +8,7 @@
         <link href="css/mainStructure.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/faviconindex.jpg">
     </head>
-    <body id="indexpage">
+    <body id="bgIndex">
     <!-- TO DO:
         - Finish the texts for the weapons, chapters and techs. (in progress [Stormy])
         - Do the CSS for all of it. (in progress [Liam])
@@ -35,28 +35,57 @@
                 <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" id="steamLink">Game On Steam</a>
             </div>
         </div>
-        <div class="indexpresentation"> <!-- thinking it could be nice to have a unique page presentation for the index since it's the first one you see and would be redundant otherwise -->
-            <center><p id="introduction"><u><b>Introduction to the game</b></u> </p></center> <!-- leave the character between /u and /p it's not a normal space it's an invisible ascii character to have the title aligned nicely -->
+
+        <!-- ============= Core Text  ============= -->
+        <div class="contentContainer"> <!-- thinking it could be nice to have a unique page presentation for the index since it's the first one you see and would be redundant otherwise -->
+            <!-- <center>
+                    <p id="introduction">
+                        <u>
+                            <b>Introduction to the game</b>
+                        </u> 
+                    </p>
+                </center>
+                leave the character between /u and /p it's not a normal space it's an invisible ascii character to have the title aligned nicely
+            -->
+            <p class="title"><b>Introduction to the game</b></p>
             <p>
-                <b>ULTRAKILL</b>'s steam page description says this about it: "<b>ULTRAKILL</b> is a fast-paced 
+                <span class="ultrakill">ULTRAKILL</span>'s steam page description says this about it: "<span class="ultrakill">ULTRAKILL</span> is a fast-paced
                 ultraviolent retro FPS combining the skill-based style scoring from character action games with 
                 unadulterated carnage inspired by the best shooters of the '90s. Rip apart your foes with varied 
                 destructive weapons and shower in their blood to regain your health."
-                <br>Its developpement was started by Arsi Patala who is kown online as hakita (see picture below) 
-                He published his first dev log on 01/02/2018 to his youtube channel though the game was only released 
+                <br>Its development was started by <a class="link" href="https://x.com/hakitadev">Arsi Patala</a>, aka Hakita (see picture below)
+                He published his first dev log on 01/02/2018 to his YouTube channel, though the game was only released
                 in early access on steam the third of september 2020 so almost 3 years later through New Blood Interactive,
-                a game publisher that mainly takes care of games similar to <b>ULTRAKILL</b> like Dusk.
+                a game publisher that mainly takes care of games similar to <span class="ultrakill">ULTRAKILL</span> like Dusk.
             </p>
-            <img id="hakitaimage" src="images\hakitapfp.jpeg">
+            <img id="hakitaImage" src="images/hakitaPfp.jpeg">
             <p>
                 He has stated it to be inspired by multiple old shooters like doom classic and arena shooters like quake,
-                both games having had a huge impact on games as a whole but also being seen heavily in <b>ULTRAKILL</b>.
-                All in the level design, the weapons, all reminiscent of the classic fps feel and even more noticeble
+                both games having had a huge impact on games as a whole but also being seen heavily in <span class="ultrakill">ULTRAKILL</span>.
+                All in the level design, the weapons, all reminiscent of the classic fps feel and even more noticeable
                 in the graphics, with them being purposefully retro and low poly.
-                <br>It is however important to note that while hakita started this alone as a passion project, the scope of 
+                <br>It is, however, important to note that while hakita started this alone as a passion project, the scope of
                 it grew and there is now a small team of devs that work on the game with 2 main ones, Hakita whom we've just 
-                mentioned and PITR who according to Hakita himself is a much better coder than him.
+                mentioned and PITR who, according to Hakita himself, is a much better coder than him.
+                <a class="link" href="devs.html" style="text-decoration: underline; font-size: .75em">[See Devs Museum]</a>
             </p>
+        </div>
+
+        <div class="contentContainer"> <!-- thinking it could be nice to have a unique page presentation for the index since it's the first one you see and would be redundant otherwise -->
+            <!-- <center>
+                    <p id="introduction">
+                        <u>
+                            <b>Introduction to the game</b>
+                        </u> 
+                    </p>
+                </center>
+                leave the character between /u and /p it's not a normal space it's an invisible ascii character to have the title aligned nicely
+            -->
+            <p class="title"><b>Introduction to the Cybergrind</b></p>
+            <p>
+                [THINGS TO SAY ABOUT THE CYBERGRIND]
+            </p>
+            <img id="cybergrindIntroImage" src="images/cybergrindIntroImage.jpeg">
         </div>
     </body> 
 </html>

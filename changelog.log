@@ -19,3 +19,21 @@ changed the index background image to have it diferenciate itself from the other
 
 12/12/2024:
 Fixed up a bit of the grammar in the current nailgun, railgun, revolver and shotgun files.
+Done the freeze frame text.
+changed the home button in the "popCulture.html" file to a pop culture text.
+
+13/12/2024:
+Done every gun's description text.
+
+15/12/2024:
+Added a bunch of items to the "doNotLook" folder, those are for the "popCultere.html" page.
+Added variables in the CSS file for the different colours of the links and titles.
+(!IMPORTANT) Changed the gameDescription type of box to be the contentContainer class so that it becomes reusable.
+Modified a bit the intro text in "index.html".
+Added a link to the dev shrine in the "index.html" file.
+Modified the Credit Button in the "levels.html" file to Dev Shrine, where now it actually acts as a button.
+Changed the hover colour of a link to be "!important" so that it overrides any other colour.
+Made so that the ultrakill word is in bold, in the special font and in uppercase. (in span it works better)
+Changed a few variable in both the css and html to make them more descriptive.
+Removed not really useful css code. (See github commit)
+Renamed the "Credit Level.html" to "devs.html".
