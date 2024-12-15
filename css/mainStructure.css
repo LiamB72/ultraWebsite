@@ -79,7 +79,7 @@ body {
     color: var(--link-hovered-color)!important;
 }
 
-#hakitaImage {
+#frontpageimage {
     margin-left:20%;
     padding-bottom: 2em;
     z-index: 1;
