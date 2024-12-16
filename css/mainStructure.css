@@ -121,6 +121,11 @@ a {
     color: white;
 }
 
+.Acts:hover {
+    background-color: #7a5400;
+    border: solid #7a5400 4px;
+}
+
 
 .Acts3 {
     background-color: black;
@@ -132,6 +137,12 @@ a {
     border-radius: 4px;
     color: white;
 }
+
+.Acts3:hover {
+    border: solid #5e5d5c 4px;
+}
+
+
 
 #pm {
     margin-top: 6rem;
@@ -206,9 +217,10 @@ hr{
     background-color: #ffae00;
     font-size: 0.35em;
     text-align: center;
-    width: 18%;
-    margin-right: 2%;
+    max-width: 30%;
+    margin-right: 1%;
     border-radius: 5px;
+    border: solid rgb(37, 37, 37) 1px;
 }
 
 .thumbnailformat {
