@@ -110,7 +110,7 @@ a {
     color: white;
   }
 
-.Acts {
+.goldenBox {     /* Meant for chapters that are finished and P-rankable */
     margin-left: 32%;
     margin-right: 32%;
     background-color: #b87f00;
@@ -121,31 +121,46 @@ a {
     color: white;
 }
 
-.Acts:hover {
+p.goldenBox a {
+    display: inline-block;
+    padding: 10px;
+    width: 96.5%;
+    height: 100%;
+}
+
+.goldenBox:hover {
     background-color: #7a5400;
     border: solid #7a5400 4px;
 }
 
 
-.Acts3 {
+.blackBox {     /* Mostly for the act 3 and the boxes afterwards */
     background-color: black;
     margin-left: 32%;
     margin-right: 32%;
     font-size: 1.25em;
-    padding: 10px;
-    border: solid #ffffff 4px;
+    border: solid white 4px;
     border-radius: 4px;
     color: white;
 }
 
-.Acts3:hover {
+p.blackBox a {
+    display: inline-block;
+    padding: 10px;
+    width: 96.5%;
+    height: 100%;
+}
+
+.blackBox:hover {
     border: solid #5e5d5c 4px;
 }
 
-
-
-#pm {
+#primeSanctumBox {
     margin-top: 6rem;
+}
+
+/* Useless
+#cybergrindBox {
     background-color: black;
     color: white;
     font-size: 1.25em;
@@ -156,11 +171,7 @@ a {
     border-radius: 4px;
 }
 
-#pm:hover {
-    border: solid #5e5d5c 4px;
-}
-
-#cbgr {
+#sandbox {
     background-color: black;
     color: white;
     font-size: 1.25em;
@@ -169,10 +180,6 @@ a {
     padding: 10px;
     border: solid white 4px;
     border-radius: 4px;
-}
-
-#cbgr:hover {
-    border: solid #5e5d5c 4px;
 }
 
 #sand {
@@ -186,20 +193,22 @@ a {
     border-radius: 4px;
 }
 
-#sand:hover {
-    border: solid #5e5d5c 4px;
-}
 
 /* ============= This is for the level presentation, hope that's clear enough, if not dm me ============= */
 
-#toptext {
+#topText {
     text-align: center;
     background-color: black;
     color: white;
     font-size: 2em;
-    margin-top: 0%;
+    margin-top: 0;
 }
-.layerbox {
+
+#topText p {
+    margin: 0.75em;
+}
+
+.layerBox {
     background-color: #b87f00;
     color: white;
     padding-left: 15px;
@@ -209,7 +218,11 @@ a {
     margin-bottom: 5px;
 }
 
-.levelboxalignment {
+.title {
+    margin: 0;
+}
+
+.levelBoxAlignment {
     display: flex;
 }
 
@@ -219,12 +232,13 @@ hr{
     background-color: white;
 }
 
-.straightline {
+.straightLine {
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.levelbox {
+
+.levelBox {
     background-color: #ffae00;
     font-size: 0.35em;
     text-align: center;
@@ -234,13 +248,13 @@ hr{
     border: solid rgb(37, 37, 37) 1px;
 }
 
-.thumbnailformat {
-    margin: 0px;
+.thumbnailFormat {
+    margin: 0;
     max-width: 80%;
     padding-bottom: 10px;
 }
 
-.levelinfo {
+.levelInfo {
     font-size: 0.75em;
 }
 
