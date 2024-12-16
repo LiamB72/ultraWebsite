@@ -39,6 +39,8 @@ Removed not really useful css code. (See github commit)
 Renamed the "Credit Level.html" to "devs.html".
 
 16/12/2024:
+Total revamp of the levels page copying the style of the ultrakill menu
+Complete revamp of the levels presentation themselves to also fit the ultrakill style
 Changed a lot of the variable recently made to give more meaning.
 Fixed the buttons in the levels page.
 Made the first 2 cards in the "predule.html" be interactable. (they go to nowhere)
