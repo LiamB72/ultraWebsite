@@ -87,6 +87,63 @@ body {
     border-radius: 5em
 }
 
+/* ============= levels content here ============ */
+
+#bgLevels {
+    background-image: url('../images/elevator.gif');
+}
+
+#chapter {  
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+#difficult {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+.Acts {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #b87f00;
+    font-size: 1.25em;
+    padding: 10px;
+    border: solid #b87f00 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+.cbgr {
+    margin-top: 6rem;
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border: solid white 4px;
+    border-radius: 4px;
+}
+
+.sand {
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border: solid white 4px;
+    border-radius: 4px;
+}
+
 /* ================ Just for pop culture page background cause ballin' ============== */
 #popCultureBG {
     background-image: url('../images/ballin.jpg '); /*different background image using an ID cause i don't plan on using it anywhere else*/
