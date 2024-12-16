@@ -89,7 +89,7 @@ body {
 
 /* ============= levels content here ============ */
 
-#bgLevels {
+.bgLevels {
     background-image: url('../images/elevator.gif');
 }
 
@@ -111,8 +111,8 @@ a {
   }
 
 .Acts {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 32%;
+    margin-right: 32%;
     background-color: #b87f00;
     font-size: 1.25em;
     padding: 10px;
@@ -121,27 +121,104 @@ a {
     color: white;
 }
 
-.cbgr {
+
+.Acts3 {
+    background-color: black;
+    margin-left: 32%;
+    margin-right: 32%;
+    font-size: 1.25em;
+    padding: 10px;
+    border: solid #ffffff 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+#pm {
     margin-top: 6rem;
     background-color: black;
     color: white;
     font-size: 1.25em;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 32%;
+    margin-right: 32%;
     padding: 10px;
     border: solid white 4px;
     border-radius: 4px;
 }
 
-.sand {
+#cbgr {
     background-color: black;
     color: white;
     font-size: 1.25em;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 32%;
+    margin-right: 32%;
     padding: 10px;
     border: solid white 4px;
     border-radius: 4px;
+}
+
+#sand {
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    margin-left: 32%;
+    margin-right: 32%;
+    padding: 10px;
+    border: solid white 4px;
+    border-radius: 4px;
+}
+
+
+/* ============= This is for the level presentation, hope that's clear enough, if not dm me ============= */
+
+#toptext {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    margin-top: 0%;
+}
+.layerbox {
+    background-color: #b87f00;
+    color: white;
+    padding-left: 15px;
+    font-size: 4em;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.levelboxalignment {
+    display: flex;
+}
+
+hr{
+    height: 2px;
+    color: white;
+    background-color: white;
+}
+
+.straightline {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.levelbox {
+    background-color: #ffae00;
+    font-size: 0.35em;
+    text-align: center;
+    width: 18%;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.thumbnailformat {
+    margin: 0px;
+    max-width: 80%;
+    padding-bottom: 10px;
+}
+
+.levelinfo {
+    font-size: 0.75em;
 }
 
 /* ================ Just for pop culture page background cause ballin' ============== */
