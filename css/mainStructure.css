@@ -156,6 +156,10 @@ a {
     border-radius: 4px;
 }
 
+#pm:hover {
+    border: solid #5e5d5c 4px;
+}
+
 #cbgr {
     background-color: black;
     color: white;
@@ -165,6 +169,10 @@ a {
     padding: 10px;
     border: solid white 4px;
     border-radius: 4px;
+}
+
+#cbgr:hover {
+    border: solid #5e5d5c 4px;
 }
 
 #sand {
@@ -178,6 +186,9 @@ a {
     border-radius: 4px;
 }
 
+#sand:hover {
+    border: solid #5e5d5c 4px;
+}
 
 /* ============= This is for the level presentation, hope that's clear enough, if not dm me ============= */
 
