@@ -79,7 +79,7 @@ body {
     color: var(--link-hovered-color)!important;
 }
 
-#frontpageimage {
+.frontPageImage {
     margin-left:20%;
     padding-bottom: 2em;
     z-index: 1;
@@ -90,19 +90,34 @@ body {
 /* ============= levels content here ============ */
 
 .bgLevels {
-    background-image: url('../images/elevator.gif');
+    background-image: url('../images/test.gif');
+}
+
+#backgroundBlackout {
+    position: absolute;
+    width: 580px;
+    margin: 0 32%;
+    background-color: black;
+}
+
+#actSelectTitle {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #chapter {  
     text-align: center;
     font-size: 3rem;
     color: white;
+    margin-bottom: 0em;
 }
 
 #difficult {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
+    margin-top: 0;
+    margin-bottom: 3.5em;
 }
 
 a {
@@ -111,21 +126,37 @@ a {
   }
 
 .goldenBox {     /* Meant for chapters that are finished and P-rankable */
-    margin-left: 32%;
-    margin-right: 32%;
+    display: flex;
+    align-items: center;
+    margin: 22.4px 7.5%;
     background-color: #b87f00;
-    font-size: 1.4em;
-    padding: 5px;
+    font-size: 1.65em;
+    padding: 5px 2px 5px 10px;
     border: solid #b87f00 4px;
     border-radius: 4px;
     color: white;
+    height: 40px;
+
 }
 
-p.goldenBox a {
-    display: inline-block;
-    padding: 10px;
+div.goldenBox a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 5px 10px;
     width: 96.5%;
     height: 100%;
+}
+
+div.rank {
+    display: flex;
+    align-items: center;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    line-height: 32px;
+    background-color: #F3A800;
+    font-size: 32px;
 }
 
 .goldenBox:hover {
@@ -133,27 +164,32 @@ p.goldenBox a {
     border: solid #7a5400 4px;
 }
 
-.sectionicon {
+.actIcon {
     border: solid white 2px;
     border-radius: 5px;
     margin-right: 10px;
+    right: 0;
     width: 1.2em;
 }
 
-.blackBox {     /* Mostly for the act 3 and the boxes afterwards */
-    background-color: black;
-    margin-left: 32%;
-    margin-right: 32%;
-    font-size: 1.4em;
-    border: solid white 4px;
-    padding: 5px;
+div.blackBox {     /* Mostly for the act 3 and the boxes afterwards */
+    display: flex;
+    align-items: center;
+    margin: 22.4px 7.5%;
+    background-color: #000000;
+    font-size: 1.65em;
+    padding: 5px 0px 5px 10px;
+    border: solid #ffffff 4px;
     border-radius: 4px;
     color: white;
+    height: 40px;
 }
 
-p.blackBox a {
-    display: inline-block;
-    padding: 10px;
+div.blackBox a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 5px 10px;
     width: 96.5%;
     height: 100%;
 }
@@ -162,8 +198,23 @@ p.blackBox a {
     border: solid #5e5d5c 4px;
 }
 
+div.emptyBox {
+    display: flex;
+    align-items: center;
+    border: #ffffff solid 5px;
+    border-radius: 5px;
+    padding: 0px 8px;
+    line-height: 32px;
+    background-color: #000000;
+    font-size: 32px;
+}
+
 #primeSanctumBox {
     margin-top: 6rem;
+}
+
+#sandbox {
+    margin-bottom: 2.5em;
 }
 
 /* Useless for now 
@@ -178,51 +229,31 @@ p.blackBox a {
     border-radius: 4px;
 }
 
-#sandbox {
-    background-color: black;
-    color: white;
-    font-size: 1.25em;
-    margin-left: 32%;
-    margin-right: 32%;
-    padding: 10px;
-    border: solid white 4px;
-    border-radius: 4px;
-}
-
-#sand {
-    background-color: black;
-    color: white;
-    font-size: 1.25em;
-    margin-left: 32%;
-    margin-right: 32%;
-    padding: 10px;
-    border: solid white 4px;
-    border-radius: 4px;
-}
-
 
 /* ============= This is for the level presentation, hope that's clear enough, if not dm me ============= */
 
-#topText {
+#difficultyText {
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 2em;
     margin-top: 0;
 }
 
-#topText p {
+#difficultyText p {
     margin: 0.75em;
+    padding: 0.5em 0;
 }
 
 .layerBox {
     background-color: #b87f00;
     color: white;
     padding-left: 15px;
+    padding-right: 15px;
     font-size: 4em;
     border-radius: 8px;
     padding-bottom: 10px;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.85em;
 }
 
 .title {
@@ -231,6 +262,9 @@ p.blackBox a {
 
 .levelBoxAlignment {
     display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 hr{
@@ -246,23 +280,40 @@ hr{
 
 
 .levelBox {
+    flex: 1;
     background-color: #ffae00;
     font-size: 0.35em;
     text-align: center;
-    max-width: 25%;
-    margin-right: 1%;
+    margin: 0.5%;
     border-radius: 5px;
     border: solid rgb(37, 37, 37) 1px;
 }
 
+.unknown {
+    background-color: #000000 !important;
+    border: solid rgb(0, 0, 0) 1px;;
+}
+
+.levelBox p.levelTitle {
+    font-size: 0.85em;
+    font-weight: bolder;
+}
+
 .thumbnailFormat {
     margin: 0;
-    max-width: 80%;
+    max-height: 200px;
     padding-bottom: 10px;
 }
 
 .levelInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 0.75em;
+}
+
+.levelInfo p {
+    margin: 15px;
 }
 
 /* ================ Just for pop culture page background cause ballin' ============== */
@@ -423,15 +474,12 @@ hr{
     scale: 75%;
 }
 */
-/* ================== Dropdown ================== */
-.left {       /* put the items with that class to the left. */
+/* ================== Weapons ================== */
+.weaponTypeSelection {        /* left side panel */
     left: 0;
-}
-
-.split {        /* left side panel */
     height: 100%;
     width: fit-content;
-    max-width: 300px;
+    width: 300px;
     position: fixed;
     padding-top: 2%;
     padding-left: 2%;

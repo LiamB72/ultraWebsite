@@ -44,3 +44,23 @@ Complete revamp of the levels presentation themselves to also fit the ultrakill 
 Changed a lot of the variable recently made to give more meaning.
 Fixed the buttons in the levels page.
 Made the first 2 cards in the "predule.html" be interactable. (they go to nowhere)
+
+17/12/2024:
+Changed the gif image to the accurate one of the game.
+Renamed some variables in the index.html file.
+Reformatted the format of levels.html.
+Added a real P-rank box both filled and empty to each act selection.
+Added the "levelTitle" class for each level in every act (it was painful).
+Removed the extra 'e' to enjoyment in each and every level description.
+Added an extra card to the prime sanctums for a future update.
+CSS Changed:
+    Added background blackout.
+    Put the act's name into uppercase.
+    Changed the padding and margin so that the title and difficult title are closer together.
+    Made the goldenBox/blackBox be flex, have less padding, a bigger font, and justify the content as space-between.
+    Added a new P-rank box to replace the image.
+    Gave the act III, the prime sanctum and Cybergrind an empty box.
+    Made the difficulty text in each act page have a transparent black background.
+    Changed the thumbnail images size to fit better the cards.
+    Started working on the weapons, see the basicIdea.png in "images/".
+Overall, built upon what was made to make it look more similar to the game.
