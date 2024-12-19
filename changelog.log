@@ -64,3 +64,12 @@ CSS Changed:
     Changed the thumbnail images size to fit better the cards.
     Started working on the weapons, see the basicIdea.png in "images/".
 Overall, built upon what was made to make it look more similar to the game.
+
+18/12/2024:
+Started to work on the weapons' page.
+Fixed the header bar:
+    - Changed the position to fix
+    - Added a defined width
+    - Added a defined height
+    - Fixed the flex items
+    - Changed almost every item that were clipping within the bar to 'top: 2.5em or top: 5em'

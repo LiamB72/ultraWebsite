@@ -15,14 +15,67 @@ body {
 
 }
 
-/* ============= specifically all index content here ============ */
+/* ================ HEADER =================== */
+
+#header {
+    display: flex;
+    position: fixed;
+    background-color: #913a3a;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5em;
+    z-index: 1;
+}
+
+#img-header {
+    flex: 1;
+}
+
+#img-header a img {
+    padding-left: 10%;
+    height: 2.5em;
+}
+
+#links-header {
+    display: flex;
+    align-items: center; /*Putting them in the center*/
+    justify-content: right;
+    flex: 8;
+}
+
+#links-header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--link-color);
+    font-size: 2rem;
+    padding-right: 4%;
+    transition: color 0.75s ease;
+}
+
+#links-header a#steamLink{
+    font-weight: bolder;
+    color: var(--link-hovered-color);
+    text-decoration: underline;
+    padding-right: 1%;
+    transition: color 0.75s ease;
+}
+
+#links-header a:hover {
+    color: var(--link-hovered-color);
+    transition: color 0.75s ease;
+}
+
+
+/* ============= index.html ============ */
 
 #bgIndex {
     background-image: url('../images/indexbackground.jpg'); /*different background image using an ID cause i don't plan on using it anywhere else*/
 }
 
 .contentContainer{
-    margin: 5em 10% 3rem;
+    margin: 0 10% 3rem;
+    top: 8em;
     width: 80%;
     position: relative;
     z-index: 0;
@@ -31,8 +84,7 @@ body {
     
     backdrop-filter: blur( 24px );
     -webkit-backdrop-filter: blur( 24px );
-    
-    /*border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+
     border: solid rgb(0, 0, 0) 4px;
     border-radius: 15px;
 }
@@ -87,7 +139,7 @@ body {
     border-radius: 5em
 }
 
-/* ============= levels content here ============ */
+/* ============= levels.html ============ */
 
 .bgLevels {
     background-image: url('../images/test.gif');
@@ -95,6 +147,7 @@ body {
 
 #backgroundBlackout {
     position: absolute;
+    top: 5em;
     width: 45%;
     margin-left: 27.5%;
     background-color: black;
@@ -230,22 +283,25 @@ div.emptyBox {
 }
 
 
-/* ============= This is for the level presentation, hope that's clear enough, if not dm me ============= */
+/* ============= levels/* ============= */
 
 #difficultyText {
+    position: relative;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 2em;
-    margin-top: 0;
+    top: 3em;
 }
 
 #difficultyText p {
-    margin: 0.75em;
+    margin-top: 0;
     padding: 0.5em 0;
 }
 
 .layerBox {
+    position: relative;
+    top: 1.5em;
     background-color: #b87f00;
     color: white;
     padding-left: 15px;
@@ -253,7 +309,7 @@ div.emptyBox {
     font-size: 4em;
     border-radius: 8px;
     padding-bottom: 10px;
-    margin-bottom: 0.85em;
+    margin-bottom: 2em;
 }
 
 .title {
@@ -316,177 +372,67 @@ hr{
     margin: 15px;
 }
 
-/* ================ Just for pop culture page background cause ballin' ============== */
+/* ================ popCulture.html ============== */
 #popCultureBG {
     background-image: url('../images/ballin.jpg '); /*different background image using an ID cause i don't plan on using it anywhere else*/
 }
 
-/* ================ HEADER =================== */
+/* ================== weapons.html ================== */
 
-#header {
+/* SIDE BAR*/
+
+.weapons {
     display: flex;
-    background-color: #913a3a;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#img-header {
-    display: inherit;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-    max-width: 40%;
-}
-
-#img-header a img {
-    width: 65%;
-    max-width: 30rem;
-}
-
-#links-header {
-    max-width: 150em;
-
-    display: flex; /* Disposition of the items themselves inside of the link header*/
-    align-items: center;
-}
-
-#links-header a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--link-color);
-    font-size: 2rem;
-    padding: 0.15rem 2.5rem; /* Add padding to links */
-    transition: color 0.75s ease;
-}
-
-#links-header a#steamLink{
-    font-weight: bolder;
-    color: var(--link-hovered-color);
-    text-decoration: underline;
-    padding: 0.15rem 2.5rem; /* Add padding to links */
-    transition: color 0.75s ease;
-}
-
-@media screen and (max-width: 1600px) {
-    #img-header {
-        max-width: 20%;
-    }
-    #links-header a {
-        font-size: 1.65rem;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    #links-header a {
-        font-size: 1.35rem;
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    #links-header a {
-        font-size: 1.3rem;
-    }
-}
-
-#links-header a:hover {
-    color: var(--link-hovered-color);
-    transition: color 0.75s ease;
-}
-
-/* ================== Weapons ================== */
-.blue-borders {
-    border: solid dodgerblue 2px;
-    border-radius: 15px;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 3em;
-}
-
-.green-borders {
-    border: solid lawngreen 2px;
-    border-radius: 15px;
-    margin: 2em 3em;
-}
-
-.red-borders {
-    border: solid rgb(206, 2, 2) 2px;
-    border-radius: 15px;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-bottom: 3em;
-}
-
-.description{
-    position: relative;
-    z-index: 0;
-    padding: 10px;  /* this adds the background blur onto the text so its readable while still having the image in the background */
-
-    background: rgba(79, 79, 79, 0.75);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    
-    backdrop-filter: blur( 24px );
-    -webkit-backdrop-filter: blur( 24px );
-    
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 15px;
-}
-
-.description p {
-
-    color: azure;
-    margin: 20px;
-    font-size: 1.25em;
-}
-
-.image {
-    position: relative;
-    float: right;
-    border-bottom: inherit;
-    border-left: inherit;
-    border-bottom-left-radius: inherit;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    z-index: 1;
-}
-
-.image img{
-    position: relative;
-    padding-top: 15px;
-    padding-right: 15px;
-    width: 350px;
-    height: 175px;
-    margin: 20px;
-    z-index: 1;
-}
-
-/*
-.primaryGun{
-    max-width: 150px;
-    max-height: 75px;
-    padding-left: 0;
-}
-
-
-.alternateGun{
-    max-width: 150px;
-    max-height: 75px;
-    scale: 75%;
-}
-*/
-/* ================== Weapons ================== */
-.weaponTypeSelection {        /* left side panel */
-    left: 0;
-    height: 100%;
-    width: fit-content;
-    width: 300px;
-    position: fixed;
-    padding-top: 2%;
-    padding-left: 2%;
-
-    background-image: linear-gradient(to right, rgba(189, 42, 42, 1), rgba(249, 0, 40, 0.25));
-    backdrop-filter: blur(10px);
+    position: absolute;
+    margin-top: 69px;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: white solid 4px;
     z-index: -1;
+}
+
+.weaponTypeSelection {
+    left: 0;
+    top: 69px;
+    height: 100%;
+    width: 450px;
+
+
+    background-color: rgba(0, 0, 0, 0.69);
+    border: white solid 4px;
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    z-index: -1;
+}
+
+#weaponTitle {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1.25em;
+}
+
+div.weaponType {
+    padding: 2px 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+div#armsType {
+    padding: 2px 0;
+    margin-bottom: 0;
+    margin-top: 2.5em;
+}
+
+div.weaponType a {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
 }
 
 .dropdown {
@@ -542,3 +488,100 @@ hr{
     background-color: #ff5e00;
     color: black;
 }
+
+/* WEAPON DESCRIPTION */
+
+.fixed {
+    position: fixed;
+}
+
+#weaponDescriptions {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 453px;
+    top: 69px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.69);
+    border: white solid 4px;
+}
+
+.blue-borders {
+    border: solid dodgerblue 2px;
+    border-radius: 15px;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 3em;
+}
+
+.green-borders {
+    border: solid lawngreen 2px;
+    border-radius: 15px;
+    margin: 2em 3em;
+}
+
+.red-borders {
+    border: solid rgb(206, 2, 2) 2px;
+    border-radius: 15px;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+.description{
+    position: relative;
+    z-index: 0;
+    padding: 10px;  /* this adds the background blur onto the text so its readable while still having the image in the background */
+
+    background: rgba(79, 79, 79, 0.75);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    backdrop-filter: blur( 24px );
+    -webkit-backdrop-filter: blur( 24px );
+
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 15px;
+}
+
+.description p {
+
+    color: azure;
+    margin: 20px;
+    font-size: 1.25em;
+}
+
+.image {
+    position: relative;
+    float: right;
+    border-bottom: inherit;
+    border-left: inherit;
+    border-bottom-left-radius: inherit;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.image img{
+    position: relative;
+    padding-top: 15px;
+    padding-right: 15px;
+    width: 350px;
+    height: 175px;
+    margin: 20px;
+    z-index: 1;
+}
+
+/*
+.primaryGun{
+    max-width: 150px;
+    max-height: 75px;
+    padding-left: 0;
+}
+
+
+.alternateGun{
+    max-width: 150px;
+    max-height: 75px;
+    scale: 75%;
+}
+*/
