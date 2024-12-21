@@ -124,3 +124,65 @@ jumpVersionChanger.addEventListener("click", () => {
     }
 })
 
+const revolverDiv = document.getElementById("revolvers");
+const revB = document.getElementById("revolverButton");
+const shotgunDiv = document.getElementById("shotguns");
+const shotB = document.getElementById("shotgunButton");
+const nailgunDiv = document.getElementById("nailguns");
+const nailB = document.getElementById("nailgunButton");
+const railcannonDiv = document.getElementById("railcannons");
+const railB = document.getElementById("railcannonButton");
+const rocketLauncherDiv = document.getElementById("rocketLaunchers");
+const rocketB = document.getElementById("rocketLauncherButton");
+const armsDiv = document.getElementById("arms");
+const armsB = document.getElementById("armsButton");
+
+
+revB.addEventListener("click", () => {
+    revolverDiv.style.display = "block";
+    shotgunDiv.style.display = "none";
+    nailgunDiv.style.display = "none";
+    railcannonDiv.style.display = "none";
+    rocketLauncherDiv.style.display = "none";
+    armsDiv.style.display = "none";
+})
+shotB.addEventListener("click", () => {
+    revolverDiv.style.display = "none";
+    shotgunDiv.style.display = "block";
+    nailgunDiv.style.display = "none";
+    railcannonDiv.style.display = "none";
+    rocketLauncherDiv.style.display = "none";
+    armsDiv.style.display = "none";
+})
+nailB.addEventListener("click", () => {
+    revolverDiv.style.display = "none";
+    shotgunDiv.style.display = "none";
+    nailgunDiv.style.display = "block";
+    railcannonDiv.style.display = "none";
+    rocketLauncherDiv.style.display = "none";
+    armsDiv.style.display = "none";
+})
+railB.addEventListener("click", () => {
+    revolverDiv.style.display = "none";
+    shotgunDiv.style.display = "none";
+    nailgunDiv.style.display = "none";
+    railcannonDiv.style.display = "block";
+    rocketLauncherDiv.style.display = "none";
+    armsDiv.style.display = "none";
+})
+rocketB.addEventListener("click", () => {
+    revolverDiv.style.display = "none";
+    shotgunDiv.style.display = "none";
+    nailgunDiv.style.display = "none";
+    railcannonDiv.style.display = "none";
+    rocketLauncherDiv.style.display = "block";
+    armsDiv.style.display = "none";
+})
+armsB.addEventListener("click", () => {
+    revolverDiv.style.display = "none";
+    shotgunDiv.style.display = "none";
+    nailgunDiv.style.display = "none";
+    railcannonDiv.style.display = "none";
+    rocketLauncherDiv.style.display = "none";
+    armsDiv.style.display = "block";
+})

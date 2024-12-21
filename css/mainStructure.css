@@ -443,12 +443,18 @@ hr{
     border: solid 5px #DCDEDB!important;
 }
 
-#weaponCategories div#arms {
+#weaponCategories div#armType {
     margin-top: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 7.04em;
 }
 
 /* <=============== Weapons' description Container ===============> */
+
+#revolvers, #shotguns, #nailguns, #railcannons, #rocketLaunchers, #arms {
+    display: none;
+}
+
+
 .weaponContainer {
     display: flex;
     flex-direction: row;
