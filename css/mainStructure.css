@@ -142,7 +142,7 @@ body {
 /* ============= levels.html ============ */
 
 .bgLevels {
-    background-image: url('../images/test.gif');
+    background-image: url('../images/ultrakill_elevator.gif');
 }
 
 #backgroundBlackout {
@@ -396,28 +396,31 @@ hr{
     position: relative;
     top: 5em;
 
-    border: white solid 5px;
+    border: #DCDEDB solid 5px;
     background-color: rgba(0, 0, 0, 0.90);
     color: white;
 }
 
+/* <=============== Weapon type div ===============> */
 #weaponTypes {
     display: flex;
     flex-direction: column;
     position: relative;
     left: 0;
-    width: 450px;
+    width: 390px;
     padding-top: 1em;
 }
 
-#weaponTitle{
+#weaponTitle {
     text-align: center;
+    text-transform: uppercase;
     font-size: 3rem;
     color: white;
-    margin: 0;
-    padding-bottom: 1.8em;
+    margin: 1em 0 0;
+    padding-bottom: 0.45em;
 }
 
+/* <=============== Weapon Categories (buttons) ===============> */
 #weaponCategories a {
     justify-content: center;
     padding: 0;
@@ -426,8 +429,18 @@ hr{
 }
 
 #weaponCategories div {
-    margin-top: 5px;
-    margin-bottom: 0;
+    margin: 5px 15% 0;
+    padding: 1px;
+    height: 30px;
+
+    border: solid #DCDEDB 5px;
+
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+#weaponCategories div:hover {
+    border: solid 5px #DCDEDB!important;
 }
 
 #weaponCategories div#arms {
@@ -435,18 +448,86 @@ hr{
     margin-bottom: 2em;
 }
 
-#weaponContainer {
+/* <=============== Weapons' description Container ===============> */
+.weaponContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     width: 66em;
     margin: 2em;
+    padding: 0 2em;
 
-    border: white solid 5px;
+    border: #DCDEDB solid 5px;
+    background-color: rgba(0, 0, 0, 0.50);
 }
 
-#weaponContainer img {
-    /* Scale down the image*/
+.weaponInfo {
+    display: flex;
+    flex-direction: row;
+    flex: 6;
+}
+
+.weaponImage {
+    display: flex;
+    align-items: center;
+    margin-right: 3em;
+}
+
+.weaponImage img {
+    max-width: 249.5px;
+}
+
+.weaponName {
+    margin: 35px 0;
+
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: .07rem;
+}
+
+.smallText {
+    font-size: 32px;
+}
+
+
+/* <=============== Buttons on the right ===============> */
+
+.weaponButtons {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+
+    margin: 3.5px 0;
+    padding: 0.25em 0;
+}
+
+.weaponButtons button{
+    margin: 4px 0;
+}
+
+.button {
+    border: solid 5px white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.50);
+
+    font-size: 35px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+}
+
+.buttonDescription {
+    flex: 5;
+}
+
+.style {
+    font-size: 55px!important;
+    font-weight: bolder;
+    line-height: 45px;
+    letter-spacing: -2px;
+    flex: 8;
 }
 
 /*TO DO:

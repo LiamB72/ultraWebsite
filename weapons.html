@@ -8,7 +8,7 @@
         <link href="css/mainStructure.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     </head>
-    <body>
+    <body id="body">
         <!-- ============= HEADER  ============= -->
         <div id="header">
             <div id="img-header">
@@ -27,37 +27,227 @@
         <div id="weapons">
             <div id="weaponTypes">
                 <p id="weaponTitle">
-                    -- Weapons --
+                    -- Menu --
                 </p>
                 <div id="weaponCategories">
                     <div class="blackBox weaponType">
-                        <a href="weapons/revolver.html">revolver</a>
+                        <a href="#">revolver</a>
                     </div>
                     <div class="blackBox weaponType">
-                        <a href="weapons/revolver.html">shotgun</a>
+                        <a href="#">shotgun</a>
                     </div>
                     <div class="blackBox weaponType">
-                        <a href="weapons/revolver.html">nailgun</a>
+                        <a href="#">nailgun</a>
                     </div>
                     <div class="blackBox weaponType">
-                        <a href="weapons/revolver.html">railcannon</a>
+                        <a href="#">railcannon</a>
                     </div>
                     <div class="blackBox weaponType">
-                        <a href="weapons/revolver.html">rocket launcher</a>
+                        <a href="#">rocket launcher</a>
                     </div>
 
                     <div id="arms" class="blackBox weaponType">
-                        <a href="weapons/revolver.html">rocket launcher</a>
+                        <a href="#">arms</a>
                     </div>
                 </div>
             </div>
             <div id="weaponDescriptions">
-                <div id="weaponContainer">
-                    <img src="images/weapons/revolver/PiercerHUDNew.webp" alt="Piercer Revolver HUD image">
-                    <p id="weaponName">Piercer</p>
-                    <p id="weaponDescription">...</p>
+                <div id="revolvers">
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="piercerImage" src="images/weapons/revolver/PiercerHUDNew.webp" alt="Piercer Revolver HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="piercerVersion">normal</button>
+                            <button class="button buttonDescription" id="piercerButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="marksmanImage" src="images/weapons/revolver/MarksmanHUDNew.webp" alt="Marksman Revolver HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="marksmanVersion">normal</button>
+                            <button class="button buttonDescription" id="marksmanButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="sharpshooterImage" src="images/weapons/revolver/SharpshooterRevolverHUD.webp" alt="Sharpshooter Revolver HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="sharpshooterVersion">normal</button>
+                            <button class="button buttonDescription" id="sharpshooterButton">show description</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="shotguns">
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="cejectImage" src="images/weapons/shotgun/CoreEjectHUDNew.webp" alt="Core Eject Shotgun HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="cejectVersion">normal</button>
+                            <button class="button buttonDescription" id="cejectButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="pumpImage" src="images/weapons/shotgun/PumpChargeHUDNew.webp" alt="Pump Shotgun HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="pumpVersion">normal</button>
+                            <button class="button buttonDescription" id="pumpButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="sawedImage" src="images/weapons/shotgun/Sawed-On_Shotgun_HUD.webp" alt="Sawed-On Shotgun HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="sawedVersion">normal</button>
+                            <button class="button buttonDescription" id="sawedButton">show description</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="nailguns">
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="attractorImage" src="images/weapons/nailgun/AttractorNailgunHUDNew.webp" alt="Attractor Nailgun HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="attractorVersion">normal</button>
+                            <button class="button buttonDescription" id="attractorButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="overheatImage" src="images/weapons/nailgun/OverheatNailgunHUDNew.webp" alt="Overheat Nailgun HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="overheatVersion">normal</button>
+                            <button class="button buttonDescription" id="overheatButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img id="jumpImage" src="images/weapons/nailgun/Jumpstart_Nailgun_HUD.webp" alt="Jumpstart Nailgun HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button style" id="jumpVersion">normal</button>
+                            <button class="button buttonDescription" id="jumpButton">show description</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="railcannons">
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img src="images/weapons/railcannon/ElectricRailcannonHUDNew.webp" alt="Electric Railcannon HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button buttonDescription" id="electricButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img src="images/weapons/railcannon/ScrewdriverRailcannonHUDNew.webp" alt="Screwdriver Railcannon HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button buttonDescription" id="screwdriverButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img src="images/weapons/railcannon/MaliciousRailcannonHUDNew.webp" alt="Screwdriver Railcannon HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button buttonDescription" id="maliciousButton">show description</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="rocketLaunchers">
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img src="images/weapons/rocket_launcher/FreezeframeHUDNew.webp" alt="Electric Railcannon HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button buttonDescription" id="freezeframeButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img src="images/weapons/rocket_launcher/SRSCannonHUDNew.webp" alt="Screwdriver Railcannon HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button buttonDescription" id="srsButton">show description</button>
+                        </div>
+                    </div>
+
+                    <div class="weaponContainer">
+                        <div class="weaponInfo">
+                            <div class="weaponImage">
+                                <img src="images/weapons/rocket_launcher/Firestarter_Rocket_Launcher_HUD.webp" alt="Screwdriver Railcannon HUD image">
+                            </div>
+                            <p class="weaponName">piercer<br><span class="smallText"> already owned </span></p>
+                        </div>
+                        <div class="weaponButtons">
+                            <button class="button buttonDescription" id="firestarterButton">show description</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="script01.js"></script>
     </body>
 </html>

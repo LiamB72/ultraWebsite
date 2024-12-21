@@ -73,3 +73,17 @@ Fixed the header bar:
     - Added a defined height
     - Fixed the flex items
     - Changed almost every item that were clipping within the bar to 'top: 2.5em or top: 5em'
+
+21/12/2024:
+Huge changes to the weapons.html page:
+    - Changed the layout of the page.
+    - Changed the "weapon" title to "menu".
+    - Added every weapons.
+    - Fixed the images' size.
+    - Flexed every containers.
+    - Added buttons to remind more of the game menu itself.
+    - Added js to make the buttons work.
+    - Made the button to change the gun's image to its alternate image if there is one.
+    - Made the same button ^ change text and color on click.
+    - Added the alt text to each and every image (it was painful).
+Updated the elevator gif to a higher quality one.
