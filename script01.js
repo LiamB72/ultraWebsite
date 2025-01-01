@@ -140,6 +140,7 @@ const armsB = document.getElementById("armsButton");
 
 revB.addEventListener("click", () => {
     revolverDiv.style.display = "block";
+    revolverDiv.style.visibility = "visible";
     shotgunDiv.style.display = "none";
     nailgunDiv.style.display = "none";
     railcannonDiv.style.display = "none";

@@ -450,7 +450,11 @@ hr{
 
 /* <=============== Weapons' description Container ===============> */
 
-#revolvers, #shotguns, #nailguns, #railcannons, #rocketLaunchers, #arms {
+#revolvers {
+    visibility: hidden;
+}
+
+#shotguns, #nailguns, #railcannons, #rocketLaunchers, #arms {
     display: none;
 }
 
@@ -496,7 +500,6 @@ hr{
 .smallText {
     font-size: 32px;
 }
-
 
 /* <=============== Buttons on the right ===============> */
 
