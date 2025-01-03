@@ -394,6 +394,7 @@ hr{
     display: flex;
     flex-direction: row;
     position: relative;
+    height: fit-content;
     top: 5em;
 
     border: #DCDEDB solid 5px;
@@ -409,6 +410,11 @@ hr{
     left: 0;
     width: 390px;
     padding-top: 1em;
+}
+
+#weaponDescriptions {
+    display: flex;
+    align-items: center;
 }
 
 #weaponTitle {
@@ -445,7 +451,7 @@ hr{
 
 #weaponCategories div#armType {
     margin-top: 3em;
-    margin-bottom: 7.04em;
+    margin-bottom: 6em;
 }
 
 /* <=============== Weapons' description Container ===============> */
@@ -461,15 +467,20 @@ hr{
 
 .weaponContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
     width: 66em;
-    margin: 2em;
+    margin: 1em;
     padding: 0 2em;
 
     border: #DCDEDB solid 5px;
     background-color: rgba(0, 0, 0, 0.50);
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
 }
 
 .weaponInfo {
@@ -539,156 +550,13 @@ hr{
     flex: 8;
 }
 
-/*TO DO:
-    - Scale down the image
-    - Align to the center the items
-    - flex the items correctly
-    follow the guide at 'images/basicIdea.png'
- */
+/* <=============== Weapons' description Container ===============> */
 
-/*SIDE BAR
-
-.weaponTypeSelection {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-
-    left: 0;
-    top: 5em;
-    height: 100%;
-    width: 450px;
-
-    background-color: rgba(0, 0, 0, 0.69);
-    border: white solid 4px;
-
-    z-index: -1;
-}
-
-#weaponTitle {
-    text-align: center;
-    font-size: 3rem;
+.weaponDescription {
+    display: none;
+    font: 1.2em "VCR OSD Mono", monospace;
     color: white;
-    margin-bottom: 1.25em;
+    margin: 2em 4em;
+    text-align: justify;
+    line-height: 1.5em;
 }
-
-div.weaponType {
-    padding: 2px 0;
-    margin-bottom: 0;
-    margin-top: 5px;
-}
-
-div#armsType {
-    padding: 2px 0;
-    margin-bottom: 0;
-    margin-top: 2.5em;
-}
-
-div.weaponType a {
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-    text-transform: uppercase;
-}
-
-/* WEAPON DESCRIPTION
-
-#weaponDescriptions {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-
-    left: 454px;
-    top: 5em;
-    padding: 1em;
-
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.79);
-    border: white solid 4px;
-    color: white;
-}
-
-*/
-
-
-
-
-
-.blue-borders {
-    border: solid dodgerblue 2px;
-    border-radius: 15px;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 3em;
-}
-
-.green-borders {
-    border: solid lawngreen 2px;
-    border-radius: 15px;
-    margin: 2em 3em;
-}
-
-.red-borders {
-    border: solid rgb(206, 2, 2) 2px;
-    border-radius: 15px;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-bottom: 3em;
-}
-
-.description{
-    position: relative;
-    z-index: 0;
-    padding: 10px;  /* this adds the background blur onto the text so its readable while still having the image in the background */
-
-    background: rgba(79, 79, 79, 0.75);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-
-    backdrop-filter: blur( 24px );
-    -webkit-backdrop-filter: blur( 24px );
-
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 15px;
-}
-
-.description p {
-
-    color: azure;
-    margin: 20px;
-    font-size: 1.25em;
-}
-
-.image {
-    position: relative;
-    float: right;
-    border-bottom: inherit;
-    border-left: inherit;
-    border-bottom-left-radius: inherit;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    z-index: 1;
-}
-
-.image img{
-    position: relative;
-    padding-top: 15px;
-    padding-right: 15px;
-    width: 350px;
-    height: 175px;
-    margin: 20px;
-    z-index: 1;
-}
-
-/*
-.primaryGun{
-    max-width: 150px;
-    max-height: 75px;
-    padding-left: 0;
-}
-
-
-.alternateGun{
-    max-width: 150px;
-    max-height: 75px;
-    scale: 75%;
-}
-*/

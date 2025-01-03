@@ -187,3 +187,198 @@ armsB.addEventListener("click", () => {
     rocketLauncherDiv.style.display = "none";
     armsDiv.style.display = "block";
 })
+
+
+const piercerDescription        = document.getElementById("piercerButton");
+const marksmanDescription       = document.getElementById("marksmanButton");
+const sharpshooterDescription   = document.getElementById("sharpshooterButton");
+
+const cejectDescription         = document.getElementById("cejectButton");
+const pumpDescription           = document.getElementById("pumpButton");
+const sawedDescription          = document.getElementById("sawedButton");
+
+const attractorDescription      = document.getElementById("attractorButton");
+const overheatDescription       = document.getElementById("overheatButton");
+const jumpDescription           = document.getElementById("jumpButton");
+
+const electricDescription       = document.getElementById("electricButton");
+const screwdriverDescription    = document.getElementById("screwdriverButton");
+const maliciousDescription      = document.getElementById("maliciousButton");
+
+const freezeDescription         = document.getElementById("freezeframeButton");
+const srsCannonDescription      = document.getElementById("srsButton");
+const firestarterDescription    = document.getElementById("firestarterButton");
+
+const feedbackerDescription     = document.getElementById("feedbackerButton");
+const knuckleDescription        = document.getElementById("knuckleButton");
+const whiplashDescription       = document.getElementById("wiphlashButton");
+
+
+const piercerText               = document.getElementById("piercerText");
+const marksmanText              = document.getElementById("marksmanText");
+const sharpshooterText          = document.getElementById("sharpshooterText");
+
+const cejectText                = document.getElementById("cejectText");
+const pumpText                  = document.getElementById("pumpText");
+const sawedText                 = document.getElementById("sawedText");
+
+const attractorText             = document.getElementById("attractorText");
+const overheatText              = document.getElementById("overheatText");
+const jumpText                  = document.getElementById("jumpText");
+
+const electricText              = document.getElementById("electricText");
+const screwdriverText           = document.getElementById("screwdriverText");
+const maliciousText             = document.getElementById("maliciousText");
+
+const freezeText                = document.getElementById("freezeText");
+const srsText                   = document.getElementById("srsText");
+const firestarterText           = document.getElementById("firestarterText");
+
+const feedbackerText            = document.getElementById("feedbackerText");
+const knuckleText               = document.getElementById("knuckleText");
+const whiplashText              = document.getElementById("whiplashText");
+
+
+piercerDescription.addEventListener("click", () => {
+    if (piercerText.style.display === "none") {
+        piercerText.style.display = "block";
+    } else {
+        piercerText.style.display = "none";
+    }
+})
+
+marksmanDescription.addEventListener("click", () => {
+    if (marksmanText.style.display === "none") {
+        marksmanText.style.display = "block";
+    } else {
+        marksmanText.style.display = "none";
+    }
+})
+
+sharpshooterDescription.addEventListener("click", () => {
+    if (sharpshooterText.style.display === "none") {
+        sharpshooterText.style.display = "block";
+    } else {
+        sharpshooterText.style.display = "none";
+    }
+})
+
+cejectDescription.addEventListener("click", () => {
+    if (cejectText.style.display === "none") {
+        cejectText.style.display = "block";
+    } else {
+        cejectText.style.display = "none";
+    }
+})
+
+pumpDescription.addEventListener("click", () => {
+    if (pumpText.style.display === "none") {
+        pumpText.style.display = "block";
+    } else {
+        pumpText.style.display = "none";
+    }
+})
+
+sawedDescription.addEventListener("click", () => {
+    if (sawedText.style.display === "none") {
+        sawedText.style.display = "block";
+    } else {
+        sawedText.style.display = "none";
+    }
+})
+
+attractorDescription.addEventListener("click", () => {
+    if (attractorText.style.display === "none") {
+        attractorText.style.display = "block";
+    } else {
+        attractorText.style.display = "none";
+    }
+})
+
+overheatDescription.addEventListener("click", () => {
+    if (overheatText.style.display === "none") {
+        overheatText.style.display = "block";
+    } else {
+        overheatText.style.display = "none";
+    }
+})
+
+jumpDescription.addEventListener("click", () => {
+    if (jumpText.style.display === "none") {
+        jumpText.style.display = "block";
+    } else {
+        jumpText.style.display = "none";
+    }
+})
+
+electricDescription.addEventListener("click", () => {
+    if (electricText.style.display === "none") {
+        electricText.style.display = "block";
+    } else {
+        electricText.style.display = "none";
+    }
+})
+
+screwdriverDescription.addEventListener("click", () => {
+    if (screwdriverText.style.display === "none") {
+        screwdriverText.style.display = "block";
+    } else {
+        screwdriverText.style.display = "none";
+    }
+})
+
+maliciousDescription.addEventListener("click", () => {
+    if (maliciousText.style.display === "none") {
+        maliciousText.style.display = "block";
+    } else {
+        maliciousText.style.display = "none";
+    }
+})
+
+freezeDescription.addEventListener("click", () => {
+    if (freezeText.style.display === "none") {
+        freezeText.style.display = "block";
+    } else {
+        freezeText.style.display = "none";
+    }
+})
+
+srsCannonDescription.addEventListener("click", () => {
+    if (srsText.style.display === "none") {
+        srsText.style.display = "block";
+    } else {
+        srsText.style.display = "none";
+    }
+})
+
+firestarterDescription.addEventListener("click", () => {
+    if (firestarterText.style.display === "none") {
+        firestarterText.style.display = "block";
+    } else {
+        firestarterText.style.display = "none";
+    }
+})
+
+feedbackerDescription.addEventListener("click", () => {
+    if (feedbackerText.style.display === "none") {
+        feedbackerText.style.display = "block";
+    } else {
+        feedbackerText.style.display = "none";
+    }
+})
+
+knuckleDescription.addEventListener("click", () => {
+    if (knuckleText.style.display === "none") {
+        knuckleText.style.display = "block";
+    } else {
+        knuckleText.style.display = "none";
+    }
+})
+
+whiplashDescription.addEventListener("click", () => {
+    if (whiplashText.style.display === "none") {
+        whiplashText.style.display = "block";
+    } else {
+        whiplashText.style.display = "none";
+    }
+})

@@ -87,3 +87,12 @@ Huge changes to the weapons.html page:
     - Made the same button ^ change text and color on click.
     - Added the alt text to each and every image (it was painful).
 Updated the elevator gif to a higher quality one.
+
+03/01/2025:
+Finally finished weapons.html.
+Now it's on testing time with the add of "@media"s.
+Removed what wasn't going to be made.
+Removed the template file.
+Removed the different weapon pages.
+Removed code relating to said pages in the css.
+(ps: I know the js is trash. I know I could have done better, but by the time I realised what I could have done, it was too late to redo everything over again.)
