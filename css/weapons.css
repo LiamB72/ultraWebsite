@@ -22,11 +22,15 @@ body {
     flex-direction: row;
     position: relative;
     height: fit-content;
-    top: 5em;
+    top: 5vw;
 
     border: #DCDEDB solid 5px;
     background-color: rgba(0, 0, 0, 0.90);
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #weapons{top:7vw;}
 }
 
 /* <=============== Weapon type div ===============> */
@@ -35,19 +39,20 @@ body {
     flex-direction: column;
     position: relative;
     left: 0;
-    width: 390px;
+    width: 25vw;
     padding-top: 1em;
 }
 
 #weaponDescriptions {
     display: flex;
     align-items: center;
+    width: 65vw;
 }
 
 #weaponTitle {
     text-align: center;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3vw;
     color: white;
     margin: 1em 0 0;
     padding-bottom: 0.45em;
@@ -59,6 +64,7 @@ body {
     padding: 0;
     width: 100%;
     text-transform: uppercase;
+    font-size: 1.5vw;
 }
 
 #weaponCategories div {
@@ -66,10 +72,7 @@ body {
     padding: 1px;
     height: 30px;
 
-    border: solid #DCDEDB 5px;
-
-    font-weight: lighter;
-    line-height: 20px;
+    border: solid 5px #DCDEDB;
 }
 
 #weaponCategories div:hover {
@@ -97,9 +100,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    width: 66em;
+    width: 60vw;
+    height: 25vh;
     margin: 1em;
-    padding: 0 2em;
+    padding: 0 2vw;
 
     border: #DCDEDB solid 5px;
     background-color: rgba(0, 0, 0, 0.50);
@@ -119,24 +123,25 @@ body {
 .weaponImage {
     display: flex;
     align-items: center;
-    margin-right: 3em;
+    margin-right: 1.2vw;
 }
 
 .weaponImage img {
-    max-width: 250px;
+    min-width: 50px;
+    width: 13vw;
 }
 
 .weaponName {
-    margin: 35px 0;
+    margin: 7.5vh 0;
 
     text-transform: uppercase;
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 2vw;
+    line-height: 4.5vh;
     letter-spacing: .07rem;
 }
 
 .smallText {
-    font-size: 32px;
+    font-size: 1.5vw;
 }
 
 /* <=============== Buttons on the right ===============> */
@@ -159,7 +164,7 @@ body {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.50);
 
-    font-size: 35px;
+    font-size: 1.45vw;
     font-family: inherit;
     text-transform: uppercase;
     color: white;
@@ -170,10 +175,8 @@ body {
 }
 
 .style {
-    font-size: 55px!important;
+    font-size: 3vw!important;
     font-weight: bolder;
-    line-height: 45px;
-    letter-spacing: -2px;
     flex: 8;
 }
 
