@@ -9,7 +9,7 @@ body {
 
 }
 
-.contentContainer{
+.contentContainer {
     margin: 0 10% 10vw;
     top: 8vw;
     width: 80%;
@@ -68,9 +68,16 @@ body {
 }
 
 .PFP {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 15vw;
+    position: relative;
+    float: right;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
     z-index: 1;
-    max-width: 70%;
+}
+
+#liamPart p {
+    padding-top: 3vh;
+    margin-bottom: 7.5vh;
 }
