@@ -240,145 +240,145 @@ const whiplashText              = document.getElementById("whiplashText");
 
 
 piercerDescription.addEventListener("click", () => {
-    if (piercerText.style.display === "none") {
-        piercerText.style.display = "block";
-    } else {
+    if (piercerText.style.display === "block") {
         piercerText.style.display = "none";
+    } else {
+        piercerText.style.display = "block";
     }
 })
 
 marksmanDescription.addEventListener("click", () => {
-    if (marksmanText.style.display === "none") {
-        marksmanText.style.display = "block";
-    } else {
+    if (marksmanText.style.display === "block") {
         marksmanText.style.display = "none";
+    } else {
+        marksmanText.style.display = "block";
     }
 })
 
 sharpshooterDescription.addEventListener("click", () => {
-    if (sharpshooterText.style.display === "none") {
-        sharpshooterText.style.display = "block";
-    } else {
+    if (sharpshooterText.style.display === "block") {
         sharpshooterText.style.display = "none";
+    } else {
+        sharpshooterText.style.display = "block";
     }
 })
 
 cejectDescription.addEventListener("click", () => {
-    if (cejectText.style.display === "none") {
-        cejectText.style.display = "block";
-    } else {
+    if (cejectText.style.display === "block") {
         cejectText.style.display = "none";
+    } else {
+        cejectText.style.display = "block";
     }
 })
 
 pumpDescription.addEventListener("click", () => {
-    if (pumpText.style.display === "none") {
-        pumpText.style.display = "block";
-    } else {
+    if (pumpText.style.display === "block") {
         pumpText.style.display = "none";
+    } else {
+        pumpText.style.display = "block";
     }
 })
 
 sawedDescription.addEventListener("click", () => {
-    if (sawedText.style.display === "none") {
-        sawedText.style.display = "block";
-    } else {
+    if (sawedText.style.display === "block") {
         sawedText.style.display = "none";
+    } else {
+        sawedText.style.display = "block";
     }
 })
 
 attractorDescription.addEventListener("click", () => {
-    if (attractorText.style.display === "none") {
-        attractorText.style.display = "block";
-    } else {
+    if (attractorText.style.display === "block") {
         attractorText.style.display = "none";
+    } else {
+        attractorText.style.display = "block";
     }
 })
 
 overheatDescription.addEventListener("click", () => {
-    if (overheatText.style.display === "none") {
-        overheatText.style.display = "block";
-    } else {
+    if (overheatText.style.display === "block") {
         overheatText.style.display = "none";
+    } else {
+        overheatText.style.display = "block";
     }
 })
 
 jumpDescription.addEventListener("click", () => {
-    if (jumpText.style.display === "none") {
-        jumpText.style.display = "block";
-    } else {
+    if (jumpText.style.display === "block") {
         jumpText.style.display = "none";
+    } else {
+        jumpText.style.display = "block";
     }
 })
 
 electricDescription.addEventListener("click", () => {
-    if (electricText.style.display === "none") {
-        electricText.style.display = "block";
-    } else {
+    if (electricText.style.display === "block") {
         electricText.style.display = "none";
+    } else {
+        electricText.style.display = "block";
     }
 })
 
 screwdriverDescription.addEventListener("click", () => {
-    if (screwdriverText.style.display === "none") {
-        screwdriverText.style.display = "block";
-    } else {
+    if (screwdriverText.style.display === "block") {
         screwdriverText.style.display = "none";
+    } else {
+        screwdriverText.style.display = "block";
     }
 })
 
 maliciousDescription.addEventListener("click", () => {
-    if (maliciousText.style.display === "none") {
-        maliciousText.style.display = "block";
-    } else {
+    if (maliciousText.style.display === "block") {
         maliciousText.style.display = "none";
+    } else {
+        maliciousText.style.display = "block";
     }
 })
 
 freezeDescription.addEventListener("click", () => {
-    if (freezeText.style.display === "none") {
-        freezeText.style.display = "block";
-    } else {
+    if (freezeText.style.display === "block") {
         freezeText.style.display = "none";
+    } else {
+        freezeText.style.display = "block";
     }
 })
 
 srsCannonDescription.addEventListener("click", () => {
-    if (srsText.style.display === "none") {
-        srsText.style.display = "block";
-    } else {
+    if (srsText.style.display === "block") {
         srsText.style.display = "none";
+    } else {
+        srsText.style.display = "block";
     }
 })
 
 firestarterDescription.addEventListener("click", () => {
-    if (firestarterText.style.display === "none") {
-        firestarterText.style.display = "block";
-    } else {
+    if (firestarterText.style.display === "block") {
         firestarterText.style.display = "none";
+    } else {
+        firestarterText.style.display = "block";
     }
 })
 
 feedbackerDescription.addEventListener("click", () => {
-    if (feedbackerText.style.display === "none") {
-        feedbackerText.style.display = "block";
-    } else {
+    if (feedbackerText.style.display === "block") {
         feedbackerText.style.display = "none";
+    } else {
+        feedbackerText.style.display = "block";
     }
 })
 
 knuckleDescription.addEventListener("click", () => {
-    if (knuckleText.style.display === "none") {
-        knuckleText.style.display = "block";
-    } else {
+    if (knuckleText.style.display === "block") {
         knuckleText.style.display = "none";
+    } else {
+        knuckleText.style.display = "block";
     }
 })
 
 whiplashDescription.addEventListener("click", () => {
-    if (whiplashText.style.display === "none") {
-        whiplashText.style.display = "block";
-    } else {
+    if (whiplashText.style.display === "block") {
         whiplashText.style.display = "none";
+    } else {
+        whiplashText.style.display = "block";
     }
 })

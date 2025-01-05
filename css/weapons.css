@@ -101,7 +101,7 @@ body {
     justify-content: space-between;
 
     width: 60vw;
-    height: 25vh;
+    height: fit-content;
     margin: 1em;
     padding: 0 2vw;
 
