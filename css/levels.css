@@ -167,7 +167,8 @@ div.emptyBox {
 
 .title {
     margin: 0;
-    font-size: 2vw;
+    padding-top: 1vh;
+    font-size: 5vw;
 }
 
 .levelBoxAlignment {
