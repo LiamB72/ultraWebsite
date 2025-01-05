@@ -101,4 +101,4 @@ Removed code relating to said pages in the css.
 05/01/2025:
 Separated each html's css into its own file.
 Changed each html accordingly to the last change.
-Made the header more 
+Made the header mroe reactive to the page's size.
