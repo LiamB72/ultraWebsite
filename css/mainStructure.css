@@ -24,8 +24,9 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 5em;
+    height: 5vw;
     z-index: 1;
+    margin-bottom: auto;
 }
 
 #img-header {
@@ -34,7 +35,7 @@ body {
 
 #img-header a img {
     padding-left: 10%;
-    height: 2.5em;
+    width: 15vw;
 }
 
 #links-header {
@@ -48,7 +49,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--link-color);
-    font-size: 2rem;
+    font-size: 2vw;
     padding-right: 4%;
     transition: color 0.75s ease;
 }
@@ -74,8 +75,8 @@ body {
 }
 
 .contentContainer{
-    margin: 0 10% 3rem;
-    top: 8em;
+    margin: 0 10% 10vw;
+    top: 8vw;
     width: 80%;
     position: relative;
     z-index: 0;
@@ -85,7 +86,7 @@ body {
     backdrop-filter: blur( 24px );
     -webkit-backdrop-filter: blur( 24px );
 
-    border: solid rgb(0, 0, 0) 4px;
+    border: solid rgb(0, 0, 0) 0.2vw;
     border-radius: 15px;
 }
 
@@ -93,7 +94,7 @@ body {
     padding: 0px 50px; /*normally it would be [top right bottom left] but here it is [top-bottom left-right]*/
     font-family: sans-serif;
     text-align: justify;
-    font-size: 1.4em;
+    font-size: 1.5vw;
     color: aliceblue;
 }
 
@@ -102,7 +103,7 @@ body {
     padding-top: 20px;
     font-family: "VCR OSD Mono", monospace;
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 3vw;
     color: var(--titles-color);
 }
 
@@ -132,11 +133,13 @@ body {
 }
 
 .frontPageImage {
-    margin-left:20%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
     padding-bottom: 2em;
     z-index: 1;
-    max-width: 60%;
-    border-radius: 5em
+    border-radius: 3em
 }
 
 /* ============= levels.html ============ */
@@ -147,7 +150,7 @@ body {
 
 #backgroundBlackout {
     position: absolute;
-    top: 5em;
+    top: 5vw;
     left: 0;
     right: 0;
     margin: auto;
@@ -275,8 +278,8 @@ div.emptyBox {
     line-height: 1vw;
 
     background-color: #000000;
-    border: #ffffff solid 5px;
-    border-radius: 5px;
+    border: #ffffff solid 0.25vw;
+    border-radius: 0.25vw;
 
 }
 
@@ -292,7 +295,7 @@ div.emptyBox {
 
 #difficultyText {
     position: relative;
-    top: 3em;
+    top: 5vw;
 
     background-color: rgba(0, 0, 0, 0.4);
 
@@ -310,11 +313,11 @@ div.emptyBox {
 .layerBox {
     position: relative;
 
-    margin-bottom: 2em;
+    margin-bottom: 5vw;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    top: 1.5em;
+    top: 5vw;
     margin-top: 2.75vw;
 
     font-size: 4em;
