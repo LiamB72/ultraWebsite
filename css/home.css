@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
+    background-color: #ffffff;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+/* ============= index.html ============ */
+
+#bgIndex {
+    background-image: url('../images/indexbackground.jpg'); /*different background image using an ID cause i don't plan on using it anywhere else*/
+}
+
+.contentContainer{
+    margin: 0 10% 10vw;
+    top: 8vw;
+    width: 80%;
+    position: relative;
+    z-index: 0;
+    background: rgba(65, 78, 74, 0.75);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    backdrop-filter: blur( 24px );
+    -webkit-backdrop-filter: blur( 24px );
+
+    border: solid rgb(0, 0, 0) 0.2vw;
+    border-radius: 15px;
+}
+
+.contentContainer p{
+    padding: 0px 50px; /*normally it would be [top right bottom left] but here it is [top-bottom left-right]*/
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 1.5vw;
+    color: aliceblue;
+}
+
+.contentContainer p.title {         /*format for the title of the different sections*/
+    text-align: center;
+    padding-top: 20px;
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-size: 3vw;
+    color: var(--titles-color);
+}
+
+.ultrakill{
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hakitaIntro {
+    text-align: center;
+    padding: 0;
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: var(--titles-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.75s ease;
+}
+
+.link:hover {
+    color: var(--link-hovered-color)!important;
+}
+
+.frontPageImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    padding-bottom: 2em;
+    z-index: 1;
+    border-radius: 3em
+}

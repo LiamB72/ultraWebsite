@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
+    background-color: #ffffff;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+/* ============= levels.html ============ */
+
+.bgLevels {
+    background-image: url('../images/ultrakill_elevator.gif');
+}
+
+#backgroundBlackout {
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 120%;
+    width: 45%;
+    background-color: black;
+    min-width: 450px;
+}
+
+#actSelectTitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#chapter {
+    margin-bottom: 0em;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+}
+
+#difficult {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3.5em;
+
+    font-size: 2vw;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.goldenBox {     /* Meant for chapters that are finished and P-rankable */
+    display: flex;
+    align-items: center;
+    margin: 1vw 7.5%;
+
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    height: 2vw;
+
+    background-color: #b87f00;
+    border: solid #b87f00 4px;
+    border-radius: 0.5vw;
+
+    color: white;
+    font-size: 1.65vw;
+}
+
+div.goldenBox a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 5px 10px;
+    width: 96.5%;
+    height: 100%;
+}
+
+div.rank {
+    display: flex;
+    align-items: center;
+
+    padding: 0.2vw 0.5vw;
+
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+
+    background-color: #F3A800;
+    border: black solid 0.1vw;
+    border-radius: 5px;
+}
+
+.goldenBox:hover {
+    background-color: #7a5400;
+    border: solid #7a5400 4px;
+}
+
+.actIcon {
+    width: 1.2em;
+    right: 0;
+    margin-right: 10px;
+    border: solid white 2px;
+    border-radius: 5px;
+}
+
+div.emptyBox {
+    display: flex;
+    align-items: center;
+    padding: 0.2vw 0.4vw;
+
+    font-size: 1vw;
+    line-height: 1vw;
+
+    background-color: #000000;
+    border: #ffffff solid 0.25vw;
+    border-radius: 0.25vw;
+
+}
+
+#primeSanctumBox {
+    margin-top: 5vw;
+}
+
+#sandbox {
+    margin-bottom: 2.5em;
+}
+
+/* ============= levels/* ============= */
+
+#difficultyText {
+    position: relative;
+    top: 5vw;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    text-align: center;
+    color: white;
+    font-size: 1.75vw;
+
+}
+
+#difficultyText p {
+    margin-top: 0;
+    padding: 0.5em 0;
+}
+
+.layerBox {
+    position: relative;
+
+    margin-bottom: 5vw;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 5vw;
+    margin-top: 2.75vw;
+
+    font-size: 4em;
+
+    border-radius: 8px;
+
+
+    background-color: #b87f00;
+    color: white;
+}
+
+.title {
+    margin: 0;
+    font-size: 2vw;
+}
+
+.levelBoxAlignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+hr{
+    height: 2px;
+    color: white;
+    background-color: white;
+}
+
+.straightLine {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.levelBox {
+    flex: 1;
+    margin: 0.5%;
+
+    font-size: 0.35vw;
+    text-align: center;
+
+    border-radius: 5px;
+    border: solid rgb(37, 37, 37) 1px;
+    background-color: #ffae00;
+}
+
+.unknown {
+    background-color: #000000 !important;
+    border: solid rgb(0, 0, 0) 1px;;
+}
+
+.levelBox p.levelTitle {
+    font-size: 1vw;
+    font-weight: bolder;
+}
+
+.thumbnailFormat {
+    margin: 0;
+    padding-top: 0.5vw;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+.levelInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2.5em;
+}
+
+.levelInfo p {
+    margin: 15px;
+}

@@ -1,0 +1,189 @@
+:root {
+    --titles-color: #f40a2b;
+    --link-color: #ffca00;
+    --link-hovered-color: #ff6a00;
+}
+
+body {
+    margin: 0;
+    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
+    background-color: #ffffff;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+
+/* ================== weapons.html ================== */
+
+#weapons{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: fit-content;
+    top: 5em;
+
+    border: #DCDEDB solid 5px;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+}
+
+/* <=============== Weapon type div ===============> */
+#weaponTypes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    width: 390px;
+    padding-top: 1em;
+}
+
+#weaponDescriptions {
+    display: flex;
+    align-items: center;
+}
+
+#weaponTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+    margin: 1em 0 0;
+    padding-bottom: 0.45em;
+}
+
+/* <=============== Weapon Categories (buttons) ===============> */
+#weaponCategories a {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#weaponCategories div {
+    margin: 5px 15% 0;
+    padding: 1px;
+    height: 30px;
+
+    border: solid #DCDEDB 5px;
+
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+#weaponCategories div:hover {
+    border: solid 5px #DCDEDB!important;
+}
+
+#weaponCategories div#armType {
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+/* <=============== Weapons' description Container ===============> */
+
+#revolvers {
+    visibility: hidden;
+}
+
+#shotguns, #nailguns, #railcannons, #rocketLaunchers, #arms {
+    display: none;
+}
+
+
+.weaponContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 66em;
+    margin: 1em;
+    padding: 0 2em;
+
+    border: #DCDEDB solid 5px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+}
+
+.weaponInfo {
+    display: flex;
+    flex-direction: row;
+    flex: 6;
+}
+
+.weaponImage {
+    display: flex;
+    align-items: center;
+    margin-right: 3em;
+}
+
+.weaponImage img {
+    max-width: 249.5px;
+}
+
+.weaponName {
+    margin: 35px 0;
+
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: .07rem;
+}
+
+.smallText {
+    font-size: 32px;
+}
+
+/* <=============== Buttons on the right ===============> */
+
+.weaponButtons {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+
+    margin: 3.5px 0;
+    padding: 0.25em 0;
+}
+
+.weaponButtons button{
+    margin: 4px 0;
+}
+
+.button {
+    border: solid 5px white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.50);
+
+    font-size: 35px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+}
+
+.buttonDescription {
+    flex: 5;
+}
+
+.style {
+    font-size: 55px!important;
+    font-weight: bolder;
+    line-height: 45px;
+    letter-spacing: -2px;
+    flex: 8;
+}
+
+/* <=============== Weapons' description Container ===============> */
+
+.weaponDescription {
+    display: none;
+    font: 1.2em "VCR OSD Mono", monospace;
+    color: white;
+    margin: 2em 4em;
+    text-align: justify;
+    line-height: 1.5em;
+}

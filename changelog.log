@@ -96,3 +96,8 @@ Removed the template file.
 Removed the different weapon pages.
 Removed code relating to said pages in the css.
 (ps: I know the js is trash. I know I could have done better, but by the time I realised what I could have done, it was too late to redo everything over again.)
+
+
+05/01/2025:
+Separated each html's css into its own file.
+Changed each html accordingly to the last change.
