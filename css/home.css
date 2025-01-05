@@ -32,7 +32,7 @@ body {
 }
 
 .contentContainer p{
-    padding: 0px 50px; /*normally it would be [top right bottom left] but here it is [top-bottom left-right]*/
+    padding: 0 50px; /*normally it would be [top right bottom left] but here it is [top-bottom left-right]*/
     font-family: sans-serif;
     text-align: justify;
     font-size: 1.5vw;
