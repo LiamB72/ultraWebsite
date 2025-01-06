@@ -85,7 +85,7 @@ div.blackBox {     /* Mostly for the act 3 and the boxes afterwards */
     color: white;
 
     background-color: #000000;
-    border: solid #ffffff 0.25vw;
+    border: solid #ffffff 4px;
     border-radius: 4px;
 }
 

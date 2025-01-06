@@ -217,8 +217,8 @@ hr{
 }
 
 .straightLine {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: auto 1.5vw;
+    
 }
 
 
@@ -259,7 +259,8 @@ hr{
 }
 
 .levelInfo p {
-    margin: 15px;
+    margin: 1vw;
+    
 }
 
 #primeBoxowo {
@@ -267,5 +268,19 @@ hr{
 }
 
 @media screen and (max-width: 800px) {
-    #difficultyText{top: 7vw;}
+    #difficultyText {
+        top: 7vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .levelBoxAlignment{
+        flex-direction:column;
+    }
+    .levelBoxAlignment div.levelBox p.levelTitle {
+        font-size: 4vw;
+    }
+    .levelBoxAlignment div.levelBox div.levelInfo{
+        font-size: 3vw;
+    }
 }
