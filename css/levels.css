@@ -166,9 +166,41 @@ div.emptyBox {
 }
 
 .title {
+    flex: 9;
     margin: 0;
+    padding-top: 1vh;
     font-size: 4vw;
     margin-bottom: 1vw;
+}
+
+.layerName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.whiteBox {
+    flex: 2;
+    background-color: #FFF!important;
+    padding: 0.2vw 0!important;
+}
+
+.whiteBox a {
+    color: #000000!important;
+    text-transform: uppercase!important;
+}
+
+a.centerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%!important;
+    padding-left: 0!important;
+}
+
+.whiteBox:hover {
+    border-color: #FFF!important;
 }
 
 .levelBoxAlignment {
@@ -188,6 +220,7 @@ hr{
     margin-left: 15px;
     margin-right: 15px;
 }
+
 
 .levelBox {
     flex: 1;
@@ -227,6 +260,10 @@ hr{
 
 .levelInfo p {
     margin: 15px;
+}
+
+#primeBoxowo {
+    padding: 0.2vw 0.3vw;
 }
 
 @media screen and (max-width: 800px) {
