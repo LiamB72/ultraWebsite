@@ -184,7 +184,7 @@ body {
 
 .weaponDescription {
     display: none;
-    font: 1.2em "VCR OSD Mono", monospace;
+    font: 1.2vw "VCR OSD Mono", monospace;
     color: white;
     margin: 2em 3vw;
     text-align: justify;

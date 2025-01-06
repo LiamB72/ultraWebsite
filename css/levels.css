@@ -167,8 +167,8 @@ div.emptyBox {
 
 .title {
     margin: 0;
-    padding-top: 1vh;
     font-size: 4vw;
+    margin-bottom: 1vw;
 }
 
 .levelBoxAlignment {
@@ -188,7 +188,6 @@ hr{
     margin-left: 15px;
     margin-right: 15px;
 }
-
 
 .levelBox {
     flex: 1;
@@ -228,4 +227,8 @@ hr{
 
 .levelInfo p {
     margin: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    #difficultyText{top: 7vw;}
 }
