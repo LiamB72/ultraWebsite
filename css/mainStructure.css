@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: "VCR OSD Mono", monospace; /* Apply custom font */
     background-color: #ffffff;
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center top; 
     background-attachment: fixed;
@@ -178,6 +178,17 @@ div.emptyBox {
     display: none;
 }
 
+.contentContainer img {
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.images {
+  display: flex;
+  gap: 10px; /* espace entre les images */
+}
+
 .contentContainerReview {
     margin: 0 10% 10vw;
     top: 8vw;
@@ -200,9 +211,6 @@ div.emptyBox {
     width: 80%;
     background: rgba(0, 0, 0, 0.75);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-
-
-
     border-radius: 15px;
 }
 
@@ -372,4 +380,54 @@ div.emptyBox {
 .conlusion p #CONCLUDE{
     font-size: 1.5vw;
     margin-left: 42%;
+}
+
+/* Bouton pour retourner au debut de la page */
+#backToTop{
+    position: fixed;
+    right: 2vw;
+    bottom: 2.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(145,58,58,0.95);
+    color: white;
+    border: none;
+    z-index: 9999; /* Place le bouton au-dessus du reste */
+    cursor: pointer;
+    font-size: 1.5vw;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(0);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+#backToTop.visible{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(-3px);
+}
+
+#backToTop:hover{
+    background: var(--link-hovered-color);
+    color: black;
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 800px){
+    #backToTop { 
+        right: 4vw; 
+        bottom: 3.5vw; 
+        width: 12vw; 
+        height: 12vw; 
+        font-size: 4vw; 
+    }
 }

@@ -4,17 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us - ultraWebsite</title>
+        <title>Review - ultraWebsite</title>
         <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
         <link href="css/mainStructure.css" rel="stylesheet">
         <link href="css/home.css" rel="stylesheet">
-        <link href="css/game.css" rel="stylesheet">
         <link href="css/home.css" rel="stylesheet">
         <link href="css/levels.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     </head>
 
     <body id="bgIndex">
+        <div id="top"></div>
         <!-- ============= HEADER  ============= -->
         <div id="header">
             <div id="img-header">
@@ -27,7 +27,7 @@
                 <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" id="steamLink">Game On Steam</a>
             </div>
         </div>
-
+        <div id="top"></div>
         <!-- ============= Guillaume's Review Part ============= -->
         <div class="contentContainer">
             <p class="title"><b>Introduction to the game</b></p>
@@ -59,7 +59,7 @@
                 virtues that are lesser angels, being the manifestation of benevolent souls, and the Archangel Gabriel who
                 is the main warden of Hell and the one who carries "The Father's Light".
             </p>
-            <p class="title"><b>Explaining the layers and their construction</b></p>
+            <p class="title"><b>Explaining the layers <br/>and<br/>their construction</b></p>
             <p>
                 Prelude: In this layer, you go through what appears to be abandoned human contructions, with it all
                 culminating into a door stating "abandon hope, all ye who enter here", which is a nod towards the
@@ -103,7 +103,7 @@
                 defile itself as the objective, not that of winning. The conclusion to that story is his armies being
                 defeated by the forces of Heaven and his head being decapitation by Gabriel.<br>
             </p>
-            <img class="frontPageImage" src="images/greed.png" alt="Hakita Pfp">
+            <img class="frontPageImage" src="images/greed.jpg" alt="Hakita Pfp">
             <p>
                 Layer 5, Wrath: This layer is mostly water based, with the levels being set within The Sea of Souls, a
                 boundless ocean of sinners left to endlessely fight the impossible current to stay on the surface. This huge
@@ -350,5 +350,23 @@
                 </p>
             </div>
         </div>
+        <button id="backToTop" title="Back to top" aria-label="Back to top">▲</button>
+        <script>
+            (() => {
+                const btn = document.getElementById('backToTop');
+                if (!btn) return;
+                function onScroll() {
+                    if (window.scrollY > 300)
+                        btn.classList.add('visible');
+                    else
+                        btn.classList.remove('visible');
+                }
+                window.addEventListener('scroll', onScroll);
+                btn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+                onScroll();
+            })();
+        </script>
     </body>
 </html>
