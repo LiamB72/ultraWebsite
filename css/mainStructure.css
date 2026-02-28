@@ -118,13 +118,45 @@ div.emptyBox {
 
 }
 
-
 @media screen and (max-width: 800px) {
     #steamLink {display: none;}
     #links-header {flex: 4;}
     #links-header a {font-size: 4vw;}
     #img-header a img {width: 23vw;}
     #header {height: 7vw;}
+}
+
+/* Les trois blocs ci-dessous permettent de mettre le lien et l'image du style index superpose comme une liste */
+#styleIndexDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25vw; /* Cette valeur semble etre suffisante pour le moment */
+}
+#styleIndexDiv a {
+    margin-top: 0.5vw;
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+#styleIndexDiv p {
+    flex : 1;
+}
+
+#styleIndexDiv a:hover {
+    color: var(--link-hovered-color);
+}
+
+/* Style custom pour l'image du style index car elle est immense sans*/
+#styleIndexImg {
+    flex: 11;
+    margin-bottom: 0.5vw;
+    object-fit: contain;
 }
 
 .listeReview {
@@ -208,8 +240,8 @@ div.emptyBox {
 }
 
 .PROS {
-    background-color: #0000b6;
-    padding: 0.5%;
+    background-color: black;
+    border: #0000b6 solid 7px;
     border-radius: 15px;
     width: 47.5%;
     filter: invert(0%);
@@ -221,7 +253,6 @@ div.emptyBox {
 }
 
 .PROS>* {
-    background-color: black;
     padding: 4%;
     margin: auto;
 }
@@ -250,8 +281,8 @@ div.emptyBox {
 }
 
 .CONS {
-    background-color: #ff0000;
-    padding: 0.5%;
+    background-color: black;
+    border: #ff0000 solid 7px;
     border-radius: 15px;
     mix-blend-mode: difference;
     width: 47.5%;
@@ -260,7 +291,6 @@ div.emptyBox {
 }
 
 .CONS>* {
-    background-color: black;
     padding: 4%;
     margin: auto;
 }
