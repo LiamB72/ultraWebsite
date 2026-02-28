@@ -135,6 +135,26 @@ div.emptyBox {
     padding: 0.5em 0;
 }
 
+/* DO NOT TOUCH THE CODE BELOW
+   IDK WHY BUT WHEN YOU REMOVE IT, 
+   THE BANNER BECOMES UNSTABLE */
+#catchPhraseThis {
+    position: relative;
+    top: 5vw;
+    background-color: rgba(0, 0, 0, 1.0);
+    margin-top: 0;
+    padding: 0.1em 0;
+}
+
+#catchPhraseThis p {
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
 .layerBox {
     position: relative;
 

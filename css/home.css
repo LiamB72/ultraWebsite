@@ -275,3 +275,39 @@
     font-size: 1.5vw;
     margin-left: 42%;
 }
+
+/* ================= Review Buttons ================= */
+.reviewButton {
+    padding: 0.75vw 2vw;
+    margin: 0.5vw;
+    background-color: #000000;
+    color: var(--link-color);
+    border: solid 3px var(--link-color);
+    border-radius: 5px;
+    font-family: "VCR OSD Mono", monospace;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reviewButton:hover {
+    background-color: var(--link-color);
+    border: black 3px solid;
+    color: black;
+}
+
+.reviewButton.active {
+    background-color: var(--link-color);
+    color: black;
+    border: black 3px solid;
+    font-weight: bold;
+}
+
+.reviewSection {
+    display: none;
+}
+
+.reviewSection.visible {
+    display: block;
+}
