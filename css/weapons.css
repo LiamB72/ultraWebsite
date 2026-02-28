@@ -51,6 +51,7 @@ body {
     width: 65vw;
     height: calc(100vh - 5vw - 10px);
     overflow-x: hidden;
+    overflow-y: auto; /* scroll inside container instead of window */
     flex: 1;
 }
 
@@ -93,7 +94,6 @@ body {
 #revolvers, #shotguns, #nailguns, #railcannons, #rocketLaunchers, #arms {
     display: none;
 }
-
 
 .weaponContainer {
     display: flex;
@@ -145,7 +145,6 @@ body {
 }
 
 /* <=============== Buttons on the right ===============> */
-
 .weaponButtons {
     display: flex;
     flex-direction: column;
@@ -181,7 +180,6 @@ body {
 }
 
 /* <=============== Weapons' description Container ===============> */
-
 .weaponDescription {
     display: none;
     font: 1.2vw "VCR OSD Mono", monospace;

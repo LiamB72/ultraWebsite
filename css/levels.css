@@ -1,14 +1,3 @@
-body {
-    margin: 0;
-    font-family: "VCR OSD Mono", monospace; /* Apply custom font */
-    background-color: #ffffff;
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
-
-}
-
 /* ============= levels.html ============ */
 
 .bgLevels {
