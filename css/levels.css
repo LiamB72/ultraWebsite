@@ -6,11 +6,11 @@
 
 #backgroundBlackout {
     position: absolute;
-    top: 5vw;
+    top: 2.5vw;
     left: 0;
     right: 0;
     margin: auto;
-    height: 120%;
+    height: calc(100vh - 2.5vw);
     width: 45%;
     background-color: black;
     min-width: 450px;
