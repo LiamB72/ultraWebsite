@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Review - ultraWebsite</title>
         <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
         <link href="css/mainStructure.css" rel="stylesheet">
-        <link href="css/review.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <link href="css/levels.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
     </head>
-    <body>
+
+    <body id="bgIndex">
+        <div id="top"></div>
         <!-- ============= HEADER  ============= -->
         <div id="header">
             <div id="img-header">
@@ -22,81 +26,400 @@
                 <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" id="steamLink">Game On Steam</a>
             </div>
         </div>
-        <div id="difficultyText">
-            <p>STANDARD</p>
+        <div id="catchPhraseThis">
+            <p class="ultrakill">Mankind is dead. Hell is full. Blood is fuel.</p>
         </div>
+        <!-- ============= Review Selector ============= -->
         <div class="layerBox">
             <div class="layerName">
-                <p class="title">LAYER 1: LIMBO</p>
-                <div class="blackBox whiteBox">
-                    <a href="https://ultrakill.wiki.gg/wiki/1-S:_The_Witless" class="centerDiv">
-                        secret mission
-                    </a>
-                </div>
+                <p class="title">ULTRAKILL Review by 4 dumbasses</p>
             </div>
             <hr class="straightLine">
             
             <div class="levelBoxAlignment">
-                    <div class="levelBox">
-                    <p class="levelTitle">
-                        1-1: HEART OF SUNRISE
-                    </p>
-                    <hr class="straightLine">
-                    <a href="https://ultrakill.wiki.gg/wiki/1-1:_Heart_of_the_Sunrise"><img class="thumbnailFormat" src="images/levelThumbnails/1-1.webp" alt="1-1 preview"></a>                    <hr class="straightLine">
-                    <div class="levelInfo">
-                        <p>Enjoyment: 7/10</p>
-                        <p>Difficulty: 5/10</p>
-                        <p>Soundtrack: 8/10</p>
-                    </div>
-                </div>
+                <!-- <=========== PART 1 BUTTON ===========> -->
                 <div class="levelBox">
-                    <p class="levelTitle">
-                        1-2: THE BURNING WORLD
-                    </p>
+                    <p class="levelTitle">Part 1: Lore</p>
                     <hr class="straightLine">
-                    <a href="https://ultrakill.wiki.gg/wiki/1-2:_The_Burning_World"><img class="thumbnailFormat" src="images/levelThumbnails/1-2.webp" alt="1-2 preview"></a>                    <hr class="straightLine">
-                    <div class="levelInfo">
-                        <p>Enjoyment: 3/10</p>
-                        <p>Difficulty: 7/10</p>
-                        <p>Soundtrack: 8/10</p>
-                    </div>
+                    <img class="thumbnailFormat" src="images/levelThumbnails/1-2.webp" alt="1-2 preview">
+                    <hr class="straightLine">
+                    <button id="guillaumeButton" class="reviewButton">Guillaume</button>
                 </div>
 
+                <!-- <=========== PART 2 BUTTON ===========> -->
                 <div class="levelBox">
-                    <p class="levelTitle">
-                        1-3: HALLS OF SACRED REMAINS
-                    </p>
+                    <p class="levelTitle">Part 2: Level & Weapon Design</p>
                     <hr class="straightLine">
-                    <a href="https://ultrakill.wiki.gg/wiki/1-3:_Halls_of_Sacred_Remains"><img class="thumbnailFormat" src="images/levelThumbnails/1-3.webp" alt="1-3 preview"></a>                    <hr class="straightLine">
-                    <div class="levelInfo">
-                        <p>Enjoyment: 8/10</p>
-                        <p>Difficulty: 6/10</p>
-                        <p>Soundtrack: 8/10</p>
-                    </div>
+                    <img class="thumbnailFormat" src="images/levelThumbnails/1-2.webp" alt="1-2 preview">
+                    <hr class="straightLine">
+                    <button id="liamButton" class="reviewButton">Liam</button>
+                </div>
+
+                <!-- <=========== PART 3 BUTTON ===========> -->
+                <div class="levelBox">
+                    <p class="levelTitle">Part 3: Game inspiration</p>
+                    <hr class="straightLine">
+                    <img class="thumbnailFormat" src="images/levelThumbnails/1-2.webp" alt="1-2 preview">
+                    <hr class="straightLine">
+                    <button id="lucasButton" class="reviewButton">Lucas</button>
+                </div>
+
+                <!-- <=========== PART 4 BUTTON ===========> -->
+                <div class="levelBox">
+                    <p class="levelTitle">Part 4: Public reception</p>
+                    <hr class="straightLine">
+                    <img class="thumbnailFormat" src="images/levelThumbnails/1-2.webp" alt="1-2 preview">
+                    <hr class="straightLine">
+                    <button id="francoisButton" class="reviewButton">François</button>
                 </div>
             </div>
         </div>
-        <div class="layerBox">
-            <h1 class="title">
-                How it's rated by the player and press
-            </h1>
-            <hr class="straightLine">
-            <div class="levelBoxAlignment">
-                <div class="levelBox">
-                    <div class="levelInfo">
-                        <p>
-                        a faire<br>
-                        <ul>
-                        <li>les avis de la presse</li>
-                        <li>les avis des joueurs</li>
-                        <li>les avis/commentaire drôles de joueurs</li>
-                        </ul>
+
+        <!-- ============= Guillaume's Review Part ============= -->
+        <div id="guillaumeReview" class="reviewSection">
+            <div class="contentContainer">
+                <p class="title"><b>Introduction to the game</b></p>
+                <p>
+                    In this game, you play as semi sentient, blood fuled robot named V1 that is currently making its way through
+                    the various layers of Hell in search of blood as fuel, anhihilating anything and everything in its path, not
+                    out of malice but rather out of a desire for survival. Each layer, with its construction, colours and themes
+                    can be directly traced back to Dante's Inferno, a book that can very much be considered a self insert
+                    fanfiction about God and their work.<br>
+                    Eacher layer is divided in 4 or 2 levels, save for the prelude which has 5, depending on what one you are on
+                    with the 2 level layers being the ones in which you fight the main "antagonist": the Archangel Gabriel.<br>
+                    As this game takes place in hell, it must come to no suprise that the ennemies you fight are hell themed.
+                    However there is a little more to them than that as you have 5 enenmy types: Husks, Machines, Demons, Angels
+                    and Prime Souls.<br>
+                    Husks are the most basic ennemy types and come from the souls of sinners, with their size and power
+                    depending on how influencial of a person they were while they lived, such examples being Minos who was
+                    really important while alive and thus has a massive body, most however are simple fodder with no ability to
+                    think and simply attack you on sight. Within the husks, in order of power, you have the filth, strays,
+                    stalkers, schisms, soldiers, insurrectionists, ferrymen and The Corpse of King Minos.<br>
+                    The machines are leftovers from humanities Hell expeditions. They scoure the layers in search of blood to
+                    fuel themselves and keep going, driven by a form of suvival instinct. Just like husks, they come in various
+                    power levels, starting with the drones, streetcleaners, sentries, swordsmachines, mindflayer, guttermen,
+                    guttertanks, 1000-THR "Earthmover", V2 and V1.<br>
+                    The demons are hell spawn, they are formed of the mass of souls in coaless into stony bodies that guard
+                    Hell. The order of them goes: malicious faces, mannequins, idols, cerberi, hideous masses, the minotaur and
+                    The Leviathan.<br>
+                    You then have angels, angelic (obviously) beings that were went down into Hell to guard the place and make
+                    sure the sinners fullfilled their duties. At the time of writing, we have only encountered 2 angels, the
+                    virtues that are lesser angels, being the manifestation of benevolent souls, and the Archangel Gabriel who
+                    is the main warden of Hell and the one who carries "The Father's Light".
+                </p>
+                <p class="title"><b>Explaining the layers <br/>and<br/>their construction</b></p>
+                <p>
+                    Prelude: In this layer, you go through what appears to be abandoned human contructions, with it all
+                    culminating into a door stating "abandon hope, all ye who enter here", which is a nod towards the
+                    inscriptions on the gate to hell in Dante's Inferno. The reason the place is baren is mostly unkown with the
+                    best guess being that humanity must have simply left it behind at some point and if they are still around
+                    currently is unkown.<br>
+                </p>
+                <img class="frontPageImage" src="images/prelude.png" alt="Hakita Pfp">
+                <p>
+                    Layer 1, Limbo: This layer is filled with those who didn't sin but they were however not deemed worthy of
+                    entering Heaven upon their death. It is built as a sophisticated torture machine with every aspect of it
+                    taunting you by showing what could have been for you, should you have believed in god. This is accomplished
+                    through fake scenery, bird noises and so on.<br>
+                </p>
+                <img class="frontPageImage" src="images/limbo.jpg" alt="Hakita Pfp">
+                <p>
+                    Layer 2, Lust: This layer is suprisingly industrialised due to the work of its former ruler: King Minos,
+                    with a full fledged city being found within. This was accomplished through a lack of intervention from the
+                    angels, after God's disapearance from this universe for reasons. During the angel's abscence, King Minos
+                    decided to bring his citizens a good life, believed that eternal punishement for simply loving one another
+                    was too harsh. His kingdom however fell after Gabriel struck him down when the angels came back.<br>
+                </p>
+                <img class="frontPageImage" src="images/lust.png" alt="Hakita Pfp">
+                <p>
+                    Layer 3, Gluttony: This layer is set to be a fleshy amalgam of bones and various body parts, hapazardly
+                    strewn around. In it, you fight Gabriel for the first time. Gabriel is made to face you as he has been
+                    instructed by The Council, a group of angels that currently oversee Heaven and Hell. During the fight, he is
+                    extremely cocky, having never lost a fight, he has full confidence in his abilty to defeat you.
+                    Unfortunately for him, you prove him wrong which sends him into a fury after which he disapears, going back
+                    to Hevaen to report on the situation, The Council however views his defeat as him not being worthy of "The
+                    Light", and strip it from him, telling him that he will die in the next 24 hours if us the player, have not
+                    been stopped.<br>
+                </p>
+                <img class="frontPageImage" src="images/gluttony.webp" alt="Hakita Pfp">
+                <p>
+                    Layer 4, Greed: This layer is set in the desert, with the punishement for sinning being to carry boulders up
+                    pyramids, exactly like in "The Myth of Sisiphus", by Albert Camus. Suprisingly enough, the ennemies found in
+                    this layer do embody the sense of futility in fighting, viewing the act itself as fullfilling. This is shown
+                    best through Sisiphus, a military leader that wanted to overthrow Heaven during their abscence. He knew from
+                    the start however, that this was a fruitless endeavor but that didn't stop him, as the view the action of
+                    defile itself as the objective, not that of winning. The conclusion to that story is his armies being
+                    defeated by the forces of Heaven and his head being decapitation by Gabriel.<br>
+                </p>
+                <img class="frontPageImage" src="images/greed.jpg" alt="Hakita Pfp">
+                <p>
+                    Layer 5, Wrath: This layer is mostly water based, with the levels being set within The Sea of Souls, a
+                    boundless ocean of sinners left to endlessely fight the impossible current to stay on the surface. This huge
+                    ocean came about during and after humanities Great War with billions upon billions of souls filling it and
+                    rendering the once peaceful layer into a never ending storm.<br>
+                </p>
+                <img class="frontPageImage" src="images/wrath.webp" alt="Hakita Pfp">
+                <p>
+                    Layer 6, Herey: This layer is the most hell themed of them all, with most of the visual elements being what
+                    you imagine when you think of torture in hell. In it, you fight Gabriel a second time, in which his title
+                    changed from "Judge of Hell" to "Apostate of Hate". During the fight, he is much more agressive, having
+                    abandoned all taunts in favor of an unrelenting assault. After you defeat him however, he takes some time to
+                    reconsider his place within the world and comes to the conluction that "The Father" truly is gone, with The
+                    Council pupetearing his will to accomplish their own goals. This results in him singlehandedly dismanteling
+                    the council through brutal executions, much to the enjoyement of the citizens of Heaven.<br>
+                </p>
+                <img class="frontPageImage" src="images/heresy.jpg" alt="Hakita Pfp">
+                <p>
+                    Layer 7, Violence: This layer is the one that represents violence against oneself, humanity and God. In it,
+                    you find the remenants of The Great War and finally get more information about it. It is said that the Great
+                    War is this universes equivalent to WWI but where for us it ended, for them it never did, leading to a
+                    senseless, never ending arms race that resulted in the creation of machines fuled by blood, first by that of
+                    war prisonners, strapped to the back of machines such as the Gutterman. The machines however soon no longer
+                    needed such limitations and thus the war continued ever forward with no end in sight. The pinnacle of the
+                    war came with The Earthmovers, machines large enough to not only carry their own shiled generator but also
+                    carry entire cities on their back as by this point, the earth was nothing but an endless scorched plain. The
+                    war ended some point after that, not with a bang but with a wimper. Having completely decimated their world,
+                    humanity soon started to rebuild, exploring Hell as a way to gather near limitless energy. During this "New
+                    Peace", humanity transformed its war machines into machines useful for everyday life, such is the case for
+                    the streetcleaners who served as a way to clean up the atmosphere. One machine was also built as a
+                    prototype, V2, the succesor to V1, the asbolute pinnacle of human engeneering and the ultimate weapon, a
+                    machine made to give the Earthmovers a lobotomy but due to its complexity, was never put into full
+                    production, also seeing how the war ended before it was ever able to be used.
+                </p>
+                <img class="frontPageImage" src="images/violence.jpg" alt="Hakita Pfp">
+                <p>
+                    Layer 8, Fraud: ???
+                </p>
+                <p>
+                    Layer 9, Treachery: ???
+                </p>
+                <br/>
+                <p class="title"><b>Story Conclusion</b></p>
+                <p>
+                    Overall, this game posses a very intricate and interesting story that takes its roots in many of media's
+                    most well known places. I skipped over a LOT of details when writting this and thus it does lack a lot of
+                    the nuances and thoughts the game throws at you but it is a pretty good overview of things.<br>
+                    I would rate the story in this game as a solid 9.5/10
+                </p>
+            </div>
+        </div>
+
+        <!-- ============= Liam's Review Part ============= -->
+        <div id="liamReview" class="reviewSection">
+            <div class="contentContainer">
+                <p class="title"><b>Explaining the layers <br/>and<br/>their construction</b></p>
+                <p>
+                    Prelude: In this layer, you go through what appears to be abandoned human contructions, with it all
+                    culminating into a door stating "abandon hope, all ye who enter here", which is a nod towards the
+                    inscriptions on the gate to hell in Dante's Inferno. The reason the place is baren is mostly unkown with the
+                    best guess being that humanity must have simply left it behind at some point and if they are still around
+                    currently is unkown.<br>
+                </p>
+                <img class="frontPageImage" src="images/prelude.png" alt="Hakita Pfp">
+                <br/>
+            </div>
+        </div>
+
+        <!-- ============= Lucas' Review Part ============= -->
+        <div id="lucasReview" class="reviewSection">
+        <div>
+            <div class="contentContainer">
+                <p class="title">Inspiration</p>
+                <div>
+                    <p class="title">
+                        Combo
+                    </p>
+                    <div class="images">
+                        <img class="frontPageImage" src="images/games/combo-dmc.jpg" alt="dmc">
+                        <div id="styleIndexDiv">
+                            <img id="styleIndexImg" src="images/games/style_index.png" alt="styleIndex">
+                            <p>Image Ref: <a href="https://ultrakill.wiki.gg/wiki/Style">https://ultrakill.wiki.gg/wiki/Style</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>In 2001, the game Devil May Cry was released, introducing an original and evolving combo system. In DMC, your gameplay, the number of hits you receive, and the diversity of your combos play a huge role in the combo you achieve during a fight. 
+                            But that's not the only rating, indeed, at the end of each level, a final rating is awarded, combining your fighting style, the number of resurrections, and the time taken to complete the level. 
+                            Ultrakill adopts almost all of these principles, with a rating during each fight ranging from E to S that varies depending on weapon diversity, the number of hits received, 
+                            and a final rating based on the level's duration.</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="title">
+                        game style
+                    </p>
+                    <div class="images">
+                        <img class="frontPageImage" src="images/games/doom-gameplay.gif" alt="doom">
+                        <img class="frontPageImage" src="images/gluttony.webp" alt="gameUK">
+                    </div>
+                    <div>
+                        <p>Another major inspiration for Ultrakill is the game DOOM, released in 1993. It draws heavily on this game for its rather dated and pixelated art style. Similarly, the regeneration system is the same, as healers must finish off enemies with a punch.
+                        The inspiration isn't limited to this; the lore is also inspired by DOOM. Indeed, you descend into Hell to kill as many demons as possible in order to purify it. Naturally, the monsters are also inspired by DOOM, but we'll come back to that later.</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="title">
+                        Dynamism of the fight
+                    </p>
+                    <div class="images">
+                        <img class="frontPageImage" src="images/games/quake-game.gif" alt="dmc">
+                        <img class="frontPageImage" src="images/games/gameplay-UK.gif" alt="comboA">
+                    </div>
+                    <div>
+                        <p>Ultrakill is a very dynamic game with extremely fast-paced action, rarely giving you a moment to breathe. Its inspiration comes from the game Quake, released in 1996. 
+                            Quake is a very dynamic game where the character is viewed from a first-person perspective with various firearms; the player moves very quickly and is constantly on the move. 
+                            Ultrakill is quite similar, with the player having a lot of horizontal and vertical movement at very high speeds.</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="title">
+                        The lore
+                    </p>
+                    <div class="images">
+                        <img class="frontPageImage" src="images/games/Carte_de_l'Enfer.jpg" alt="mapEnfer">
+                        <img class="frontPageImage" src="images/games/mapUK.jpg" alt="mapUk">
+                    </div>
+                    <div class="images">
+                        <img class="frontPageImage" src="images/Ryann-victoria-leviathan.png" alt="mapEnfer">
+                        <img class="frontPageImage" src="images/Providence_V3.png" alt="mapUk">
+                    </div>
+                    <div>
+                        <p>For its lore, Ultrakill draws heavily on mythology and also on a collection of poems called the Divine Comedy by Dante (which also inspired DMC). Indeed, Ultrakill presents us with different levels of Hell, shown here through the game's stages. 
+                            This comes from the Divine Comedy, which depicts Hell in seven distinct levels, each different from the others. But the mythology doesn't stop there; a descent into Hell inevitably involves demons and angels, so naturally, our enemies belong to this category. 
+                            We must therefore confront angels and demons on each level.</p>
+                    </div>
+                                <div>
+                    <p class="title">
+                        The art and music 
+                    </p>
+                    <div class="images">
+                        <img class="frontPageImage" src="images/levelThumbnails/1-2.webp" alt="mapEnfer">
+                        <img class="frontPageImage" src="images/levelThumbnails/2-4.webp" alt="mapUk">
+                    </div>
+                    <div>
+                        <p>Finally, let's talk about the musical and artistic inspiration.
+                        To begin, as mentioned earlier, the art style is heavily inspired by older games, but not exclusively. 
+                        Ultrakill features very different styles in each level; one floor might be lush greenery, while the next plunges you into a highly technological world. Other levels are inspired by Egypt, and naturally, others represent hell, with blood and red everywhere.
+                        For the music, Ultrakill opted for very powerful and shocking tracks, like metal, allowing the player to stay focused and fully immersed in the fight without the music becoming repetitive. 
+                        This prevents the player from getting bored, as they might hear it repeatedly after dying. There's also a slight influence from DMC, which also features very violent and dynamic music for each fight.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="weaponsScreen.js"></script>
+        </div>
+        </div>
+        <!-- ============= François' Review Part ============= -->
+        <div id="francoisReview" class="reviewSection">
+        <div class="contentContainerReview">
+            <p class="title">
+                What are the reviews ?
+            </p>
+            <div>
+                <h2>- It's time to talk about reviews of players -
+                </h2>
+            </div>
+            <div class="ProsConsReview">
+                <div class="PROS">
+                    <p id="titrePROS">
+                        PROs<br>
+                        ---
+                    </p>
+                    <ul class="listeReview">
+                        <li>
+                            <span class="ultrakill">The movement system :</span><br>
+                            is really addictive, mostly because of the
+                            speed,
+                            the movement system, and the
+                            resulting rewards. Indeed, you can dash, slide, and bump on a wall in a nervous action moment
+                            that
+                            is rewarded by the game by increasing the combo value. Another well-liked feature is the
+                            parrying
+                            because it's really powerful to resend the shot of enemies.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="ultrakill">The weapon system :</span><br>
+                            is very interesting for many players because it
+                            allows a lot of different builds
+                            with different mechanics, with each weapon and their own munitions.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="ultrakill">The game design :</span><br>
+                            Even if the graphics are like PS1 games,
+                            they are not ugly; they are stylized, and the result is a unique and immersive atmosphere.
+                            Not uniquely with the graphics, also with music, boss fitghs and with additive content made by
+                            the community.
+                            We can say that boss fights are really appreciated for the overall atmosphere and the challenge.
+                        </li>
+                    </ul>
+                </div>
+                <div class="CONS">
+                    <p id="titreCONS">
+                        CONs<br>
+                        ---
+                    </p>
+                    <p id="explicationCONS">
+                        *It seems that ultrakill didn't have any haters : the Steam rating is <span class="ultrakillRED">97%
+                            positive…</span><br>
+                        and a lot of 'negative' reviews are just reviews that make a bad joke and then say that the game
+                        is
+                        a masterpiece ...<br>
+                        But I still found some serious reviews !<br>
+                    </p>
+                    <br>
+                    <!--
+                    <div class="imageAvis">
+                        <img class="imgAVis" src="./images/BuyIt.png">
+                        <img class="imgAVis" src="./images/GoPlayTheGame.png"><br>
+                        <img class="imgAVisLARGE" src="./images/STOP.png">
+                    </div>
+                    -->
+                    <ul class="listeReview2">
+                        <li>
+                            <span class="ultrakill">The gameplay</span> is bugged,<br>( a good thing for some players, but
+                            objectively it's not good ).
+                        </li>
+                        <br>
+                        <li>
+                            <span class="ultrakill">The levels</span> are sometimes too long.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="ultrakill">The game need more content</span>,<br>for some player wich love this
+                            game, a bad side it's that do all the levels is short.
+                        </li>
+                        <br>
+                        <li>
+                            <span class="ultrakill">hard for casual players</span><br>or <span class="ultrakill">player
+                                who's never played FPS</span>,<br>his biggest default is maybe the accessibility; some
+                            people can want to
+                            play
+                            this game but are discouraged by the difficulties.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conlusion">
+
+                <p>
+                    <span id="CONCLUDE">Conlusion<br></span><br>
+                    <span class="ultrakill">To conclude,</span>I can give an external point of view as someone who
+                    does
+                    not know the
+                    game: the universe, the game design, and the movement make a unique atmosphere; when you watch or
+                    read reviews, it makes you want to play it.
+
+                    But keep in mind that it can be a demanding game, with its mechanics, as well as all the knowledge
+                    about enemies, weapons, and their variations. You have to spend time to truly appreciate this game.
+                    If you only play occasionally, then you might miss out on it.
+                </p>
+            </div>
+        </div>
+        </div>
+        <button id="backToTop" title="Back to top" aria-label="Back to top">▲</button>
+        <script src="boutonUtile.js"></script>
+        <script src="indexReviewToggle.js"></script>
     </body>
 </html>
